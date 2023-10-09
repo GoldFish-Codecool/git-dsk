@@ -1,16 +1,6 @@
-# Python program to find largest
-# number in a list
-
-# Creating an empty list
-list1 = []
-
-# asking number of elements to put in list
-num = int(input("Enter number of elements in list: "))
-
-# Iterating till num to append elements in list
-for i in range(1, num + 1):
-    ele = int(input("Enter elements: "))
-    list1.append(ele)
-
-# Printing maximum element
-print("Largest element is:", max(list1))
+num = int (input("Enter the number of elements in the list: "))
+list=[]
+for i in range (0,num):
+  ele = int(input("Enter element: "))
+  list.append(ele)
+print("The largest element in the list is: ", max(list))
