@@ -1,0 +1,8 @@
+count = int(input("How many numbers would you like to input?"))
+largest = 0
+for i in range(count):
+  number = int(input(f"Enter Number {i+1}:"))
+  if largest < number:
+      largest = number 
+  
+print(f"\nthe largest number is: {largest}")
