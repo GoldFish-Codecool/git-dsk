@@ -1,0 +1,6 @@
+from datetime import datetime
+birth_year = int(input("What is  your birthday year?"))
+
+current_year = datetime.today().year
+years = current_year - birth_year
+print(f'Your age is : {years} years')
