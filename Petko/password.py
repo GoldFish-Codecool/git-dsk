@@ -9,9 +9,9 @@ def generate_password(passlength):
         uppercase = string.ascii_uppercase
         numeric = string.digits
         symbols = string.punctuation
-        all = lowercase + uppercase + numeric + symbols
+        combination = lowercase + uppercase + numeric + symbols
 
-        temp = random.sample(all,length)
+        temp = random.sample(combination,length)
 
         password = "".join(temp)
 
