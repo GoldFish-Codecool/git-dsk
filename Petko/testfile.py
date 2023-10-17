@@ -1,1 +1,1 @@
-commentprint("Slaveyko update")
+print("Slaveyko update")
