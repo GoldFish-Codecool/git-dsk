@@ -1,9 +1,19 @@
-import yfinance as yf
+# Design a tool that checks if a given password meets certain criteria: a mix of uppercase, lowercase, numbers, symbols, and a minimum length. 
+# The program should provide feedback on which criteria the password fails.
 
+import re
 
-ticker = yf.Ticker("AAPL")
+password = input("Input a stong password (mix of uppercase, lowercase, numbers, symbols) and at least 6 symbols: ")
 
-
-historical_data = ticker.history(interval="1d")
-
-print(historical_data.head())
+if len(password) < 6:
+    print("Minimum 6 symbols.")
+elif re.search(r'[A-Z]', password) == None:
+    print('At least one uppercase letter')
+elif re.search(r'[a-z]', password) == None:
+    print('At least one lowercase letter')
+elif re.search(r'[0-9]', password) == None:
+    print('At least one number')
+elif re.search(r'[!@#$%^&*()_+=-]', password) == None:
+    print('At least one symbol')
+else:
+    print(f"Congratulation. {password} is a strong password.")
