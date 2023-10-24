@@ -3,6 +3,7 @@ import sys
 largest_number = 0
 all_numbers = []
 
+
 count = int (input ("How many numbers do you want to compare? "))
 if count <= 0:
   print ("The number has to be bigger than Zero")
