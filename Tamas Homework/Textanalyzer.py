@@ -55,7 +55,7 @@ def most_common_word():
 
   return (max_word, max_count)
   
-# Tamas
+# Gabor
 def menu():
   print("1. Count sentences")
   print("2. Count words")
