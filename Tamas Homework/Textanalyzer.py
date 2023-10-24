@@ -1,24 +1,28 @@
 # **Text Analyzer**:
 # - Create a program that reads a text file and provides statistics like word count, sentence count, most common words, and average word length.
 
+# Dana
 def enter_text():
     text = input("Enter text: ")
     file_name = "Tamas_text_analyzer.txt"
     with open(file_name, "w") as file:
       file.write(text)
 
+# Dorothy
 def word_count():
     with open("Tamas_text_analyzer.txt", "r") as file:
       content = file.read()
       words = content.split()
     return len(words)
 
+# Petko
 def sentence_count():
     with open("Tamas_text_analyzer.txt", "r") as file:
       content = file.read()
       sentences = content.split(".")
     return len(sentences)
 
+# Mihail
 def average_wordlength():
   with open("Tamas_text_analyzer.txt", "r") as file:
     content = file.read()
@@ -30,6 +34,7 @@ def average_wordlength():
     formatted_length = "{:.2f}".format(length)
   return formatted_length
 
+# Boyan
 def most_common_word():
   with open("Tamas_text_analyzer.txt", "r") as file:
     content = file.read()
@@ -50,7 +55,7 @@ def most_common_word():
 
   return (max_word, max_count)
   
-
+# Tamas
 def menu():
   print("1. Count sentences")
   print("2. Count words")
@@ -60,7 +65,7 @@ def menu():
   choice = int(input("What is your choice\n\n"))
   return choice
 
-
+# Tamas
 if __name__=="__main__":
   enter_text()
   
