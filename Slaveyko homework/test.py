@@ -1,6 +1,3 @@
-# Design a tool that checks if a given password meets certain criteria: a mix of uppercase, lowercase, numbers, symbols, and a minimum length. 
-# The program should provide feedback on which criteria the password fails.
-
 import re
 
 password = input("Input a stong password (mix of uppercase, lowercase, numbers, symbols) and at least 6 symbols: ")
