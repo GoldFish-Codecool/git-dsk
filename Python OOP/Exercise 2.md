@@ -17,6 +17,6 @@ Create a simple task management system where users can manage tasks, each with i
 
 4. **Due Dates:** Extend the `Task` class to include a due date attribute. Allow users to sort tasks by due date.
 
-5. **Subtasks:** Implement a feature where tasks can have subtasks. Subtasks should also be instances of the `Task` class, and they can be added to a parent task. Implement methods to manage subtasks.
+5. **Subtasks (Optional):** Implement a feature where tasks can have subtasks. Subtasks should also be instances of the `Task` class, and they can be added to a parent task. Implement methods to manage subtasks.
 
 6. **User Interface (Optional):** If you want to take this project further, create a simple text-based user interface to interact with the task management system.
