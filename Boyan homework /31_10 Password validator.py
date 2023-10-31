@@ -10,14 +10,14 @@ def is_valid_password(password):
     feedback.append("Password must contain at least one uppercase letter")
   if not re.search(r"[0-9]", password):
     feedback.append("Password must contain at least one digit")
-  if not re.search(r"[@#$%^&*()]", password):
+  if not re.search(r"[@#$%^&*()?!.]", password):
     feedback.append("Password must contain at least one symbol")
   if len(password) < 8:
     feedback.append("Password must be at least 8 characters long")
   if not feedback:
     return "Valid password"
   else:
-    return "/n".join(feedback)
+    return "\n".join(feedback)
 
 
 while True:
@@ -27,5 +27,5 @@ while True:
     print("Password is valid.")
     break
   else:
-    print("Invalid password. PLease try again.")
+    print(f"Invalid password. PLease try again.\n{result}")
 
