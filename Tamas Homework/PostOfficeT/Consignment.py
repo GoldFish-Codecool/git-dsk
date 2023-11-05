@@ -1,28 +1,28 @@
 class Consignment:
 
-  def __init__(self, address, date, tpye, size, weight):
+  def __init__(self, address, date, kind, size, weight):
 
     self.address = address
     self.date = date
-    self.type = type
+    self.kind = kind
     self.size = size
     self.weight = weight
     self.price = 0
 
   def post (self) :
-    #self.price = 111
-    if self.type == "Letter" :
+
+    if self.kind == "Letter" :
       self.price = 1.99
     
-    elif self.type == "Package" and self.size == "S" :
+    elif self.kind == "Package" and self.size == "S" :
       self.price = 7.99
     
-    elif self.type == "Package" and self.size == "L" :
+    elif self.kind == "Package" and self.size == "L" :
       self.price = 10.29 + self.weight * 0.29
 
-    #print ("run")
-    #print (self.type)
-    #print (self.price)
+    print ("run")
+    print (self.kind)
+    print (self.price)
 
     return self.price
 
