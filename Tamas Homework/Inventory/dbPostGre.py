@@ -13,3 +13,18 @@ def get_products() :
     products = cur.fetchall()
     for product in products :
         print(product)
+
+def add_product(name, quantity, price) :
+    cur.execute("INSERT INTO products (name, quantity, price) VALUES (%s, %s, %s) RETURNING iD;", (name, quantity, price))
+    product_id = cur.fetchone()[0]
+    conn.commit
+    print (f"Product added with id: {product_id}")
+
+def delete_product(product_id) :
+    cur.execute("DELETE FROM products WHERE id = %s", (product_id,))
+    conn.commit
+    print(f"Successfully deleted id {product_id}")
+
+
+
+
