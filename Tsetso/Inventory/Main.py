@@ -1,7 +1,6 @@
-
 from db import * 
 
-if __name__ == "__main__"
+if __name__ == "__main__":
     while True:
         print("\Inventory Management menu")
         print("1. List Products")
