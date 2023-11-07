@@ -1,7 +1,6 @@
 
 from db import * 
 
-<<<<<<< HEAD
 if __name__ == "__main__"
     while True:
         print("\Inventory Management menu")
@@ -20,12 +19,3 @@ if __name__ == "__main__"
             add_product(name, quantity, price)
         elif choice.upper() == "X":
             break
-
-
-
-=======
-if __name__ == "__main__":
-    get_products()
-    
-
->>>>>>> c269635d472aaf85807a4455eee524d614bd1373
