@@ -1,0 +1,232 @@
+[
+    {
+        "name": "John Doe",
+        "accountNumber": "36794405",
+        "balance": 3337.13,
+        "transactions": [
+            {
+                "date": "2023-05-10",
+                "amount": -97.04,
+                "description": "ATM Withdrawal"
+            },
+            {
+                "date": "2023-03-27",
+                "amount": 264.27,
+                "description": "Deposit"
+            }
+        ]
+    },
+    {
+        "name": "Jane Smith",
+        "accountNumber": "93373748",
+        "balance": 1925.97,
+        "transactions": [
+            {
+                "date": "2023-06-27",
+                "amount": 468.03,
+                "description": "Deposit"
+            },
+            {
+                "date": "2023-07-18",
+                "amount": 108.92,
+                "description": "Deposit"
+            },
+            {
+                "date": "2023-08-28",
+                "amount": 257.44,
+                "description": "Deposit"
+            }
+        ]
+    },
+    {
+        "name": "Alice Johnson",
+        "accountNumber": "39667269",
+        "balance": 1666.81,
+        "transactions": [
+            {
+                "date": "2023-07-13",
+                "amount": 381.24,
+                "description": "Deposit"
+            }
+        ]
+    },
+    {
+        "name": "Bob Brown",
+        "accountNumber": "15549070",
+        "balance": 553.82,
+        "transactions": [
+            {
+                "date": "2023-01-20",
+                "amount": 265.24,
+                "description": "Deposit"
+            },
+            {
+                "date": "2023-01-16",
+                "amount": 44.58,
+                "description": "Deposit"
+            },
+            {
+                "date": "2023-02-15",
+                "amount": 427.9,
+                "description": "Deposit"
+            },
+            {
+                "date": "2023-07-24",
+                "amount": -277.4,
+                "description": "ATM Withdrawal"
+            }
+        ]
+    },
+    {
+        "name": "Charlie Green",
+        "accountNumber": "07511854",
+        "balance": 3596.99,
+        "transactions": [
+            {
+                "date": "2023-06-19",
+                "amount": -490.58,
+                "description": "ATM Withdrawal"
+            },
+            {
+                "date": "2023-07-19",
+                "amount": -470.04,
+                "description": "ATM Withdrawal"
+            },
+            {
+                "date": "2023-07-27",
+                "amount": 204.43,
+                "description": "Deposit"
+            },
+            {
+                "date": "2023-05-10",
+                "amount": 321.89,
+                "description": "Deposit"
+            },
+            {
+                "date": "2023-03-16",
+                "amount": 276.11,
+                "description": "Deposit"
+            }
+        ]
+    },
+    {
+        "name": "Daisy White",
+        "accountNumber": "88033557",
+        "balance": 4252.78,
+        "transactions": [
+            {
+                "date": "2023-05-11",
+                "amount": -449.27,
+                "description": "ATM Withdrawal"
+            },
+            {
+                "date": "2023-04-23",
+                "amount": 46.03,
+                "description": "Deposit"
+            },
+            {
+                "date": "2023-04-22",
+                "amount": 427.62,
+                "description": "Deposit"
+            }
+        ]
+    },
+    {
+        "name": "Eve Black",
+        "accountNumber": "41089487",
+        "balance": 1585.41,
+        "transactions": [
+            {
+                "date": "2023-03-27",
+                "amount": -27.78,
+                "description": "ATM Withdrawal"
+            },
+            {
+                "date": "2023-05-28",
+                "amount": 392.77,
+                "description": "Deposit"
+            },
+            {
+                "date": "2023-05-22",
+                "amount": -318.45,
+                "description": "ATM Withdrawal"
+            }
+        ]
+    },
+    {
+        "name": "Frank Grey",
+        "accountNumber": "34645172",
+        "balance": 3198.42,
+        "transactions": [
+            {
+                "date": "2023-02-17",
+                "amount": 78.92,
+                "description": "Deposit"
+            },
+            {
+                "date": "2023-08-12",
+                "amount": -134.89,
+                "description": "ATM Withdrawal"
+            },
+            {
+                "date": "2023-06-22",
+                "amount": 495.49,
+                "description": "Deposit"
+            },
+            {
+                "date": "2023-05-15",
+                "amount": 267.88,
+                "description": "Deposit"
+            }
+        ]
+    },
+    {
+        "name": "Grace Blue",
+        "accountNumber": "14286273",
+        "balance": 4253.14,
+        "transactions": [
+            {
+                "date": "2023-07-14",
+                "amount": 452.09,
+                "description": "Deposit"
+            },
+            {
+                "date": "2023-09-24",
+                "amount": -99.1,
+                "description": "ATM Withdrawal"
+            }
+        ]
+    },
+    {
+        "name": "Hank Yellow",
+        "accountNumber": "63015913",
+        "balance": 2021.65,
+        "transactions": [
+            {
+                "date": "2023-03-11",
+                "amount": -6.76,
+                "description": "ATM Withdrawal"
+            },
+            {
+                "date": "2023-06-17",
+                "amount": 454.3,
+                "description": "Deposit"
+            },
+            {
+                "date": "2023-06-25",
+                "amount": 296.65,
+                "description": "Deposit"
+            },
+            {
+                "date": "2023-08-21",
+                "amount": -303.06,
+                "description": "ATM Withdrawal"
+            },
+            {
+                "date": "2023-05-11",
+                "amount": 37.82,
+                "description": "Deposit"
+            }
+        ]
+    }
+]
