@@ -1,4 +1,4 @@
-def print_table ():
+def print_table (table):
 
     import get_table
 
