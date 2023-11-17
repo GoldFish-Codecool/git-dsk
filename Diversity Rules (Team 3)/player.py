@@ -4,6 +4,7 @@ class Player:
         self.health = 3
         self.alcohol = 0
         self.chairman = 0
+        self.location = 1 #starts with 1, as that is the 1st location (Area 1) #we need to update location too
         self.statuses = {
             "jail": 0,
             "fired": 0,

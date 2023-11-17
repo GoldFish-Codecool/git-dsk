@@ -8,9 +8,9 @@ class Area
         self.next_area = ""
 
     def display_choices(self):
-    print(self.intro)
-    for i, choice in enumerate(self.choices):
-    print(f"{i + 1}. {choice}")
+        print(self.intro)
+        for i, choice in enumerate(self.choices):
+            print(f"{i + 1}. {choice}")
 
     class Area1(Area)
         intro = "Welcome to Area 1 - enter all description text"
