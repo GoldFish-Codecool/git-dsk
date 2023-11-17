@@ -8,8 +8,16 @@ from check_win import win
 from check_draw import is_board_full
 
 menu()
-players_name_char()
+player_A, player_B = players_name_char()
+print (player_A)
 board = get_table()
+
+#if identify first mover name
+#if player_A [1] == "X"
+current_player = 'X'
+
+
+
 current_player = 'X'
 
 while True:

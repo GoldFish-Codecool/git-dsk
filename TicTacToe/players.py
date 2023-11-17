@@ -1,5 +1,5 @@
 def players_name_char ():
-    
+
     player_A_name = input("First Player, Please enter your name: ")
     player_A_char = input("Please select character: (X/O)").upper()
 
@@ -14,8 +14,11 @@ def players_name_char ():
     else:
         player_B_char = "X"
         print (f"{player_B_name} starts! \n")
+    
+    player_A = [player_A_name, player_A_char]
+    player_B = [player_B_name, player_B_char]
 
-    return (player_A_name, player_A_char, player_B_name, player_B_char)
+    return (player_A, player_B)
 
 
 

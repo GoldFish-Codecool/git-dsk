@@ -1,6 +1,6 @@
 def get_player_moves(table):
     while True:
-        move = input("Write your move (e.g. A1, A3, B3): ").upper()
+        move = input("Make your move (e.g. A1, A3, B3): ").upper()
         if move == "QUIT":
             row, col = (1,1)
             interrupt_game = True
