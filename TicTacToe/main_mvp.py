@@ -9,36 +9,39 @@ from check_draw import is_board_full
 
 menu()
 player_A, player_B = players_name_char()
-print (player_A)
 board = get_table()
+player_turn = []
+if player_A [1] == "X":
+    player_turn = player_A
+else:
+    player_turn = player_B
 
-#if identify first mover name
-#if player_A [1] == "X"
-current_player = 'X'
-
-
-
-current_player = 'X'
+#current_player = 'X'
 
 while True:
     interrupt_game = False
     print_table(board)
+    print ("\n", player_turn[0])
     row, col, interrupt_game = get_player_moves(board)
 
     if interrupt_game == True:
         print("Sorry to see you go in the middle of a game")
         exit()
 
-    make_move(board, row, col, current_player)
+    make_move(board, row, col, player_turn[1])
 
     if win(board):
         print_table(board)
-        print(f"Player {current_player} wins!")
+        print(f"Player {player_turn[0]} wins!")
         break
     
     if is_board_full(board):
         print_table(board)
         print("It's a draw!")
         break
-
-    current_player = 'O' if current_player == 'X' else 'X'
+    
+    if player_turn == player_A:
+        player_turn = player_B
+    else:
+        player_turn = player_A
+    #current_player = 'O' if current_player == 'X' else 'X'
