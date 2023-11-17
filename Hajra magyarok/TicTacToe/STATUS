@@ -12,7 +12,13 @@ Done:
 
 [optional]
 * quit game
+* Player vs Computer mode (AI play)
+* Leaderboard store
+* Computer vs Computer
 
 Not done:
 [optional]
-* Player vs Computer mode
+* Easy win
+* Easy lose
+* Unbeatable
+
