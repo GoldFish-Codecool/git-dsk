@@ -13,8 +13,14 @@ board = get_table()
 current_player = 'X'
 
 while True:
+    interrupt_game = False
     print_table(board)
-    row, col = get_player_moves(board)
+    row, col, interrupt_game = get_player_moves(board)
+
+    if interrupt_game == True:
+        print("Sorry to see you go in the middle of a game")
+        exit()
+
     make_move(board, row, col, current_player)
 
     if win(board):
