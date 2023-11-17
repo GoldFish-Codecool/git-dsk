@@ -12,4 +12,5 @@ table = [
 
 table [2][2] = 'O'
 
+
 print table
