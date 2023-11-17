@@ -21,7 +21,7 @@ else:
 while True:
     interrupt_game = False
     print_table(board)
-    print ("\n", player_turn[0])
+    print(f"\n\033[1;31m{player_turn[0]}\033[0m")
     row, col, interrupt_game = get_player_moves(board)
 
     if interrupt_game == True:
@@ -39,7 +39,7 @@ while True:
         print_table(board)
         print("It's a draw!")
         break
-    
+
     if player_turn == player_A:
         player_turn = player_B
     else:
