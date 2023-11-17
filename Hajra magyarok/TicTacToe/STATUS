@@ -6,9 +6,13 @@ Done:
 * Get players move
 * Player making move
 * Print board
-
-Not done:
 * Check for win
 * Check for a full board
 * Print results
+
+[optional]
+* quit game
+
+Not done:
+[optional]
 * Player vs Computer mode
