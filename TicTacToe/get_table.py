@@ -1,7 +1,7 @@
 def get_table ():
 
     table = [
-    ['','1','|','2','|','3'],
+    [' ','1','|','2','|','3'],
     ['A','.','|','.','|','.'],
     ['-','-','+','-','+','-'],
     ['B','.','|','.','|','.'],
@@ -9,10 +9,12 @@ def get_table ():
     ['C','.','|','.','|','.'],
     ]
 
+    #table [1][1] = 'O'
+    #table [5][3] = 'X'
+    #table [5][3] = 'O'
 
-    table [2][2] = 'O'
-
-
-    print (table)
-
-get_table ()
+    #for row in table:
+    #    for element in row:
+    #        print (element, end=" ")
+    #    print ()
+#get_table ()
