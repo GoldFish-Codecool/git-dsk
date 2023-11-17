@@ -1,7 +1,0 @@
-def get_empty_board():
-    return [['.' for _ in range(3)] for _ in range(3)]
-
-def print_board(board):
-    print("  1 2 3")
-    for i, row in enumerate(board):
-        print(chr(65 + i), ' '.join(row))
