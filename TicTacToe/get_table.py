@@ -10,9 +10,12 @@ def get_table ():
     ]
 
 
-    table [2][2] = 'O'
+    #table [2][2] = 'O'
 
-
-    print (table)
+    for row in table:
+        for element in row:
+            print (element)
+        #print ()
+ 
 
 get_table ()
