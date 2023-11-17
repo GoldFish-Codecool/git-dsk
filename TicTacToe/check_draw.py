@@ -1,14 +1,6 @@
-def drawn(table):
-    drawn = True
-    for raw in table:
-        for element in row:
-            if element == " ":
-                drawn = False
-                break
+def is_board_full(table):
 
-            if not drawn:
-                break
-
-            if drawn:
-                print("Drawn! Do you want to play again? Y/N")
-                
+    for i in [1, 3, 5]:
+        if '.' in table[i]:
+            return False
+    return True

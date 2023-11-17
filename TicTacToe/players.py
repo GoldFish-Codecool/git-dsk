@@ -1,4 +1,4 @@
-def players ():
+def players_name_char ():
     
     player_A_name = input("First Player, Please enter your name: ")
     player_A_char = input("Please select character: (X/O)")
