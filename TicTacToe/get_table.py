@@ -9,14 +9,12 @@ def get_table ():
     ['C','.','|','.','|','.'],
     ]
 
-    table [1][1] = 'O'
-    table [5][3] = 'X'
-    table [5][3] = 'O'
+    #table [1][1] = 'O'
+    #table [5][3] = 'X'
+    #table [5][3] = 'O'
 
-    for row in table:
-        for element in row:
-            print (element, end=" ")
-        print ()
- 
-
-get_table ()
+    #for row in table:
+    #    for element in row:
+    #        print (element, end=" ")
+    #    print ()
+#get_table ()
