@@ -1,11 +1,9 @@
-def show_menu():
-    print("1. Player A vs Player B")
-    print("2. Player vs Computer")
-    print("3. Computer vs Computer")
+def menu()
+    while True
+        print("1. Player A vs Player B")
+        print("2. Player vs Computer")
+        print("3. Computer vs Computer")
 
-def main():
-    while True:
-        show_menu()
         choice = input("Enter your choice: ")
         if choice =="1":
             print("You chose option 1.")    
@@ -18,6 +16,3 @@ def main():
         else:
             print("Invalid choice, please enter a valid option.")
 
-if __name__ == "__main__":
-    main()
-        
