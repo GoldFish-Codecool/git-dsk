@@ -1,4 +1,6 @@
-def print_board(board):
+board = [[".", ".", "."], [".", ".", "."], [".", ".", "."]]
+
+def get_empty_board(board):
   for row in board:
     print(" | ".join(row))
     print("-" * 9)
