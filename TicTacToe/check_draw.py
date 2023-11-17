@@ -1,5 +1,6 @@
 import table from create_table:
 
+
 for row in table:
     for element in row:
         if element == X or element == 0:
