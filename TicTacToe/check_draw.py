@@ -1,13 +1,6 @@
-def drawn(table):
-    drawn = True
-    for row in table:
-        for element in row:
-            if element == " ":
-                drawn = False
-                break
+import table from create_table:
 
-        if not drawn:
-            break 
-
-    if drawn:
-        print("Drawn! Do you want to play again? Y/N")
+for row in table:
+    for element in row:
+        if element == X or element == 0:
+            print("Drawn! Do you want to restart? (Y/N)")
