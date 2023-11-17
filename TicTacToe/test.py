@@ -13,3 +13,16 @@ print_table (table)
 #announce the winner
 
 
+while True:
+    print_table(board)
+    row, col = get_player_moves(board)
+    make_move(board, row, col, current_player)
+
+    if check_winner(board):
+        print_table(board)
+        print(f"Player {current_player} wins!")
+        break
+    if is_board_full(board):
+        print_table(board)
+        print("It's a draw!")
+        break

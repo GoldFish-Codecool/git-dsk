@@ -9,6 +9,3 @@ def get_player_moves(table):
             print("That space is already taken. Try again.")
             continue
         return row, col
-
-
-board = get_table()
