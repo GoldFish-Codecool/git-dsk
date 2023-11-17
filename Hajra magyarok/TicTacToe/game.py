@@ -1,5 +1,6 @@
 import os
 import random
+import time
 from board import Board
 from player import Player
 from leadboard import LeadershipBoard
@@ -37,7 +38,7 @@ class Game:
         self.message = f'{self.active_player.name} turn ({self.active_player.symbol}).'
 
     def play_game(self):
-    # Play the game
+        # Play the game
         while self.status:
             # Clear the screen
             os.system('cls' if os.name == 'nt' else 'clear')
@@ -45,6 +46,7 @@ class Game:
             # Print the board
             self.board.display_board()
             print(self.message)
+            time.sleep(1)
 
 
             # Get the player's or AI's move
@@ -66,6 +68,14 @@ class Game:
             else:
                 self.message = f'{move} is not a valid move. Please try again. \n\n{self.active_player.name} turn.'
 
+        # Clear the screen. Print final board. Print results.
+        os.system('cls' if os.name == 'nt' else 'clear')
+        self.board.display_board()
+        print(self.message)
+
+        # Print the leadership board
+        self.leadership_board.display_leaderboard() if self.AI in [1, 2] else None
+
     def get_player_move(self):
     # Get the player's move
         move = input('\nWhat is your move (A1...C3): ').lower()
@@ -76,10 +86,26 @@ class Game:
     # Get the AI's move
         possible_moves = [key for key in self.board.board.keys() if self.board.board[key] == '•']
         
+        # Check for winning move
+        symbol = self.active_player.symbol
+        for move in possible_moves:
+            board = self.board.board.copy()
+            board[move] = symbol
+            if self.check_for_winners(board):
+                return move
+
+        # Prevent easy lose
+        symbol = 'X' if self.active_player.symbol == 'O' else 'O'
+        for move in possible_moves:
+            board = self.board.board.copy()
+            board[move] = symbol
+            if self.check_for_winners(board):
+                return move
+
+        # Randomly choose a move
         move = random.choice(possible_moves)
 
         return move
-
 
     
     def make_move(self, move):
@@ -90,7 +116,7 @@ class Game:
             self.board.board[move] = self.active_player.symbol
 
             # Check for a winner
-            if self.check_for_winners():
+            if self.check_for_winners(self.board.board):
                 self.message = f'{self.active_player.name} wins!\n'
                 self.leadership_board.save_score(self.active_player.name, 2) if not self.active_player.AI else None
                 self.status = False
@@ -120,7 +146,7 @@ class Game:
         if '•' not in self.board.board.values():
             return True
 
-    def check_for_winners(self):
+    def check_for_winners(self, board):
     # Check if there is a winner
         winning_combinations = [
             ['a1', 'a2', 'a3'],
@@ -134,7 +160,7 @@ class Game:
         ]
 
         for combination in winning_combinations:
-            if self.board.board[combination[0]] == self.board.board[combination[1]] == self.board.board[combination[2]] != '•':
+            if board[combination[0]] == board[combination[1]] == board[combination[2]] != '•':
                 return True
     
 
