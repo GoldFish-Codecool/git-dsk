@@ -1,0 +1,14 @@
+Status:
+
+Done:
+* Game could be started with player vs player mode
+* Initialize board
+* Get players move
+* Player making move
+* Print board
+
+Not done:
+* Check for win
+* Check for a full board
+* Print results
+* Player vs Computer mode
