@@ -1,0 +1,23 @@
+Status:
+
+Done:
+* Game could be started with player vs player mode
+* Initialize board
+* Get players move
+* Player making move
+* Print board
+* Check for win
+* Check for a full board
+* Print results
+
+[optional]
+* quit game
+* Player vs Computer mode (AI play)
+* Leaderboard store
+
+Not done:
+[optional]
+* Easy win
+* Easy lose
+* Unbeatable
+* Computer vs Computer
