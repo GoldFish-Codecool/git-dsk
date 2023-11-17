@@ -17,7 +17,7 @@ while True:
     row, col = get_player_moves(board)
     make_move(board, row, col, current_player)
 
-    if win(winner):
+    if win(board):
         print_table(board)
         print(f"Player {current_player} wins!")
         break
@@ -27,4 +27,4 @@ while True:
         print("It's a draw!")
         break
 
-  current_player = 'O' if current_player == 'X' else 'X'
+    current_player = 'O' if current_player == 'X' else 'X'
