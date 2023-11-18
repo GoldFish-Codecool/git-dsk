@@ -6,6 +6,7 @@ from player_moves import get_player_moves
 from move import make_move
 from check_win import win
 from check_draw import is_board_full
+from leaderboardpeter import *
 
 menu()
 player_A, player_B = players_name_char()
