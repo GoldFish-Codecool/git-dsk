@@ -17,11 +17,11 @@ Area1.next_area = [2,6,3,5]
 Area2 = Area(2)
 Area2.intro = "\nThe protesters smile at you, but you notice they are dressed as standard football hooligans. Probably they are here to join the riot - however, your thoughts are stopped, as one of them addresses you directly, while the rest sorround you in a circle. - Hello stranger! Where are you heading? Everything is locked due to the match. Come, let's have some fun together, you are anyway stuck here, unable to enter the park. As he finishes his sentence, he pulls out a can of Kamenitsa from under his black leather jacket and hands it over to you. \n"
 Area2.choices = ["\nAfter a quick thought, you decide to take the beer. Anyway you have time, the others are just about to depart - and this also seems to be the safer choice. Who knows what would happen if you reject? \n", 
-                 "\nYou are not here to talk to some football rioters. Anyways, you do not even have a strong clue what this whole topic is about, so you do not want to run into some unfavourable discussions. You reject the beer and try to move forward. \n", 
-                 ]
-Area2.outros = ["\nYou open the can of beer and say cheers to all the rioters. They are smiling, and you are having fun. You discuss the Bulgarian and Hungarian political situation. Who thought they are a fan of Orban as well? You also manage to convince them to walk with you to the stadium as much as possible. You show your ticket to the guards, once you arrive - just on time, as the others arrive as well.  \n", 
-                "\nTheir faces darken, as you reject the beer. The park also seems to go darker immediately, while you see the person putting the beer away. - So, you think you are too fancy for us? How nice. Let us teach you the other way! Before you could react, he spits at you and then immediately also punches you in the stomach. Humiliated, you rush towards the stadium. \n", 
+                "\nYou are not here to talk to some football rioters. Anyways, you do not even have a strong clue what this whole topic is about, so you do not want to run into some unfavourable discussions. You reject the beer and try to move forward. \n"
                 ]
+Area2.outros = ["\nYou open the can of beer and say cheers to all the rioters. They are smiling, and you are having fun. You discuss the Bulgarian and Hungarian political situation. Who thought they are a fan of Orban as well? You also manage to convince them to walk with you to the stadium as much as possible. You show your ticket to the guards, once you arrive - just on time, as the others arrive as well.  \n", 
+               "\nTheir faces darken, as you reject the beer. The park also seems to go darker immediately, while you see the person putting the beer away. - So, you think you are too fancy for us? How nice. Let us teach you the other way! Before you could react, he spits at you and then immediately also punches you in the stomach. Humiliated, you rush towards the stadium. \n" 
+               ]
 Area2.attribute_updates = [{"health": 0, "alcohol": 1, "chairman": 0}, {"health": -1, "alcohol": 0, "chairman": 0}]
 Area2.next_area = [6,6]
 
@@ -29,12 +29,12 @@ Area2.next_area = [6,6]
 Area3 = Area(3)
 Area3.intro = "\nAs you enter the bus from the front, you immediately notice that it is empty. The front is fully lighted, while the back of the bus is dark. Clearly, noone wants to sit anyone there. As you wonder if you are at the right bus at all, the driver asks you: - Are you heading to the football match? Can I see your ticket? Showing your ticket, he invites you to sit down - but where? \n"
 Area3.choices = ["\nYou decide to sit in the front - anyway that it the only place where there is light. You prefer the window, maybe you can also see some policemen and protesters fighting on the way… \n", 
-                 "\nOr, as you think further - maybe the bus is not bulletproof - it would be safer to sit close to the corridor. \n", 
-                 "\nOr, maybe, there are also others coming with this bus? Even though, at this stage you are convinced everyone else was at the other bus. You go to the back of the bus, trying to dissappear in the pitch black area, and try to find a place there near the window. \n", 
-                 ]
+                "\nOr, as you think further - maybe the bus is not bulletproof - it would be safer to sit close to the corridor. \n", 
+                "\nOr, maybe, there are also others coming with this bus? Even though, at this stage you are convinced everyone else was at the other bus. You go to the back of the bus, trying to dissappear in the pitch black area, and try to find a place there near the window. \n"
+                ]
 Area3.outros = ["\nAs you settle to your chair, the Chairman arrives. He looks at you with a questionmark on his face - you are sitting at his place! He looks back behind his back. Ivaylo Hadjiev - and some others - arrive, and ask you to leave the bus. You are rushed to the other bus, which was stopped just on the way to the stadium. Running in embarassment, you also trip, injuring yourself, before sitting down next to your colleagues on the bus. Their embarassing jokes are the highlight of the journey to the stadium. \n", 
                 "\nAs you settle to your chair, the Chairman arrives. He looks at you with a questionmark on his face and then proceeds to sit next to you.\n"
-                "\nYou notice the Chairman arriving. As it is dark, he almost did not even recognize you are there. He looks at you with a dissappointed look but otherwise - you dodged a bullet. \n", 
+                "\nYou notice the Chairman arriving. As it is dark, he almost did not even recognize you are there. He looks at you with a dissappointed look but otherwise - you dodged a bullet. \n"
                 ]
 Area3.attribute_updates = [{"health": -1, "alcohol": 0, "chairman": -5}, {"health": 0, "alcohol": 0, "chairman": -3}, {"health": -1, "alcohol": 0, "chairman": -1}]
 Area3.next_area = [6,4,6]
