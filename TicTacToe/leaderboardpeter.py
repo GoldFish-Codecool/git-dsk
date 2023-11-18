@@ -1,4 +1,5 @@
 import psycopg2
+#from dbPostGre import *
 
 DB_NAME ="hucodjek"
 USER = "hucodjek"
@@ -15,15 +16,13 @@ def get_winners() :
         print(winner)
 
 def add_winner(winner, opponent, xoro) :
-    cur.execute("INSERT INTO tictatoe (winner, opponent, xoro) VALUES (%s, %s, %s) RETURNING iD;", (winner, opponent, xoro))
+    cur.execute("INSERT INTO tictactoe (winner, opponent, xoro) VALUES (%s, %s, %s) RETURNING iD;", (winner, opponent, xoro))
     winner_id = cur.fetchone()[0]
     conn.commit()
     print (f"Winner added with id: {winner_id}")
 
     conn.commit()
     print(f"Winner with id {winner_id} updated successfully")
-
-    from dbPostGre import *
 
 if __name__ == "__main__":
     
@@ -38,8 +37,8 @@ if __name__ == "__main__":
         if choice == "1": 
             get_winners()
         elif choice == "2" :
-            name = input("Winner name: ")
-            quantity = input("Opponent: ")
-            price = input("xoro: ")
+            winner = input("Winner name: ")
+            opponent = input("Opponent: ")
+            xoro= input("xoro: ")
             add_winner(winner, opponent, xoro)
             break
