@@ -3,7 +3,7 @@ from area import *
 Area1 = Area(1)
 Area1.intro = "Welcome to the Hyatt Hotel. Now you should choose a way how to reach the stadium?"
 Area1.choices = ["By walk", "By the standard bus", "By the bulletproof bus", "By the empty s-class Mercedes"]
-Area1.outros = []
+Area1.outros = ["Outro 1", "Outro 2", "Outro 3", "Outro 4"]
 Area1.attribute_updates = []
 Area1.next_area = [2,3,4,5]
 
