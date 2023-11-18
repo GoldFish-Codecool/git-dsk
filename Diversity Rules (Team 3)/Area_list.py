@@ -293,17 +293,19 @@ Area21.next_area = [23,22]
 
 #END GAME
 Area22 = Area(22)
-Area22.intro = "\nGAME OVER \n"
-Area22.choices = ["WE HOPED YOU ENJOYED THE GAME"]
-Area22.outros = ["SEE YOU NEXT TIME!"]
+Area22.intro = "\nYou arrived home safely! \n"
+Area22.choices = ["\nWhat happens next? Press 1 to find out."]
+Area22.outros = ["\nLet's see..."]
 Area22.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
+Area22.next_area = [22]
 
 #JAIL
 Area23 = Area(23)
-Area23.intro = "\nGAME OVER - YOU WERE TAKEN TO JAIL \n"
-Area23.choices = ["WE HOPED YOU ENJOYED THE GAME"]
-Area23.outros = ["SEE YOU NEXT TIME!"]
+Area23.intro = "\nYOU WERE TAKEN TO JAIL \n"
+Area23.choices = ["\nWhat happens next? Press 1 to find out."]
+Area23.outros = ["\nLet's see..."]
 Area23.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
+Area23.next_area = [23]
 
 area_list = [Area1, Area2, Area3, Area4, Area5, Area6, Area7, Area8, Area9, Area10, Area11, Area12, Area13, Area14, Area15, Area16, Area17, Area18, Area19, Area20, Area21, Area22, Area23]
 # to switch between areas: this can be imported into the main.py and use area_list as a normal variable with list indexing

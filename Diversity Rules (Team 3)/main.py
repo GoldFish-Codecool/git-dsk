@@ -73,7 +73,7 @@ while True: # should be while not_game-over condition
     old_area = new_area
     user_input, new_area = get_user_choice()
 
-    #print(player1.location, user_input, old_area)  
+    print(player1.location, user_input, old_area)  
     health_update = area_list[player1.location].attribute_updates [user_input]["health"]
     player1.update_health(health_update)
     print(f"Your health is {player1.health} ")
@@ -95,12 +95,13 @@ while True: # should be while not_game-over condition
     elif player1.chairman < -5:
         print(f"Game over. Your favour with the Chairman reached {player1.chairman}. Chairman had enough of you. You are fired.")
         break
-    elif player1.location == 23:
+    elif player1.location == 22:
         print("GAME OVER - YOU WERE TAKEN TO JAIL")
-    elif player1.location == 22 and player1.chairman > 4:
+        break
+    elif player1.location == 21 and player1.chairman > 4:
         print(f"You are home safely. The next day you get a letter from the Chairman - you are promoted.")
         break
-    elif player1.location == 22:
+    elif player1.location == 21:
         print(f"You win. You are home safely.")
         break
     
