@@ -30,7 +30,7 @@ while True:
 
     if player_turn[0][0:8] == "Computer":
         # call computer move
-        row, col, interrupt_game = computer_move(board)
+        row, col, interrupt_game = computer_move(board, player_turn[1])
     else:
         row, col, interrupt_game = get_player_moves(board)
 

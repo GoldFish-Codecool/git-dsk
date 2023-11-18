@@ -23,7 +23,7 @@ def check_potential_win_move(board, player_char):
                 board[row][col] = player_char
                 if win(board):
                     board[row][col] = '.'
-                    return (row, col)  
+                    return (row, col, False)  
                 board[row][col] = '.'
     return None
  
@@ -36,12 +36,12 @@ def check_potential_block_move(board, opponent_char):
                 board[row][col] = opponent_char
                 if win(board):  
                     board[row][col] = '.'
-                    return (row, col)  
+                    return (row, col, False)  
                 board[row][col] = '.'  
     return None
  
 def computer_move(board, computer_char):
-    available_moves = [(r, c) for r in range(1, 6, 2) for c in range(1, 6, 2) if board[r][c] == '.']
+    available_moves = [(r, c, False) for r in range(1, 6, 2) for c in range(1, 6, 2) if board[r][c] == '.']
  
 #define the winning moves
  
