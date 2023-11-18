@@ -88,7 +88,7 @@ while True: # should be while not_game-over condition
         exit_program()
     
     def exit_program():
-    sys.exit(0)
+     sys.exit(0)
     
     #else:
     #player1.location = new_area
