@@ -46,6 +46,7 @@ def get_user_choice():
             print(outros[user_input])
             return next_area[user_input]-1
         elif user_input.lower() == "quit":
+            print("You are exiting the game..Thank you for playing")
             sys.exit(0)
         else:
             print("Invalid choice. Please try again.")
