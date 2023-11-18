@@ -45,7 +45,8 @@ def get_user_choice():
             print(choices[user_input])
             print(outros[user_input])
             return next_area[user_input]-1
-         
+        elif user_input.lower() == "quit":
+            sys.exit(0)
         else:
             print("Invalid choice. Please try again.")
 
