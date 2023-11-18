@@ -244,112 +244,52 @@ Area17.outros = ["\nFor a second, you think you got the answer right - the inter
 Area17.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": -5}, {"health": 0, "alcohol": 0, "chairman": -3}]
 Area17.next_area = [18,18]
 
-Area2 = Area(2)
-Area2.intro = "\n \n"
-Area2.choices = ["\n \n", 
-                 "\n \n", 
-                 "\n \n", 
-                 "\n \n"]
-Area2.outros = ["\n \n", 
-                "\n \n", 
-                "\n \n", 
-                "\n \n"]
-Area2.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
-Area2.next_area = [6,7,8,9]
+Area18 = Area(18)
+Area18.intro = "\nAfter leaving the stadium, you feel very close to getting to the end of your day. However, suddenly everyone you know from DSK dissappeared, there is noone to follow anymore. What do you do? \n"
+Area18.choices = ["\nIt was a long day - you decide to walk home. \n", 
+                "\nYou see the Hungarian people boarding the VIP bus - probably the others are on it already as well. \n", 
+                "\nYou see and hear fans close to you celebrating - you decide that the night is young, it is time for a well-deserved celebration! \n", 
+                ]
+Area18.outros = ["\nYou expect an uneventful yourney home, as you quickly start walking in the cold. \n", 
+                "\nYou approach the bus, smiling at the familiar Hungarian faces. \n", 
+                "\nYou head toward the fans - you will see soon, which country they cheered for. \n", 
+                ]
+Area18.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}, {"health": 0, "alcohol": 0, "chairman": 0}, {"health": 0, "alcohol": 0, "chairman": 0}]
+Area18.next_area = [19,20,21]
 
-Area2 = Area(2)
-Area2.intro = "\n \n"
-Area2.choices = ["\n \n", 
-                 "\n \n", 
-                 "\n \n", 
-                 "\n \n"]
-Area2.outros = ["\n \n", 
-                "\n \n", 
-                "\n \n", 
-                "\n \n"]
-Area2.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
-Area2.next_area = [6,7,8,9]
+Area19 = Area(19)
+Area19.intro = "\nAfter a while, you come up to 2 path to get to your car. \n"
+Area19.choices = ["\nThere is chance to go straight ahead - seems well lit, without any people in sight. However, there are many garbage on the ground and you might also smell something burning in that direction - maybe a trash bin? \n", 
+                 "\nYou are aware there is an alternative - a little bit longer, but all across darker areas. \n", 
+                 ]
+Area19.outros = ["\nYou meet the rioters for a short second. In order to avoid any further interaction with them, you decide to run for a few hundred meters - however, at the end of the part you trip, falling on your knees. You pick yourself back up, and arrive home safely. \n", 
+                "\nYou walked a bit longer than needed maybe - you will never know. You get home safe. \n", 
+                ]
+Area19.attribute_updates = [{"health": -1, "alcohol": 0, "chairman": 0}, {"health": 0, "alcohol": 0, "chairman": 0}]
+Area19.next_area = ["END GAME"]
 
-Area2 = Area(2)
-Area2.intro = "\n \n"
-Area2.choices = ["\n \n", 
-                 "\n \n", 
-                 "\n \n", 
-                 "\n \n"]
-Area2.outros = ["\n \n", 
-                "\n \n", 
-                "\n \n", 
-                "\n \n"]
-Area2.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
-Area2.next_area = [6,7,8,9]
+Area20 = Area(20)
+Area20.intro = "\nAs you onboard the bus, you notice people looking at you with a strange face, wondering if you are Hungarian or Bulgarian? \n"
+Area20.choices = ["\nBulgarian \n", 
+                 "\nHungarian \n"
+                ]
+Area20.outros = ["\nThey explain you that this bus is for Hungarians heading to the airport only. They drop you off at Eagle's bridge, where you fall out of the bus in embarrasment, hurting your knee. \n", 
+                "\nThey explain you that this bus is for Hungarians heading to the airport only. They drop you off at Eagle's bridge, where you fall out of the bus in embarrasment, hurting your knee. \n", 
+                ]
+Area20.attribute_updates = [{"health": -1, "alcohol": 0, "chairman": -3}, {"health": -1, "alcohol": 0, "chairman": -5}]
+Area20.next_area = ["END GAME"]
 
-Area2 = Area(2)
-Area2.intro = "\n \n"
-Area2.choices = ["\n \n", 
-                 "\n \n", 
-                 "\n \n", 
-                 "\n \n"]
-Area2.outros = ["\n \n", 
-                "\n \n", 
-                "\n \n", 
-                "\n \n"]
-Area2.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
-Area2.next_area = [6,7,8,9]
+Area21 = Area(21)
+Area21.intro = "\nThe fans rooted for Bulgaria, so they are drinking in dissappointment. You might also see a few familiar faces, you met earlier tonight as well? Nonetheless, they welcome you with open arms, offering you a drink. \n"
+Area21.choices = ["\nYou take the drink, which looks like a weathered can of low-quality beer. You start discussing the match passionately. \n", 
+                 "\nYou reject the drink, and decide it might be more wiser to head home \n", 
+                 ]
+Area21.outros = ["\nOne beer follows the next and next and next ones... you get drunk - maybe that's the reason how they managed to convince you to join the still ongoing small riot against the President of the Bulgarian Football assosiaction. You finish the night at JAIL. \n", 
+                "\nThe fans are not happy that you do not join them, especially after they learn you also do not wish to riot further with them. They punch you in the stomach - after which you quickly rush home to safety. \n", 
+                ]
+Area21.attribute_updates = [{"health": 0, "alcohol": 100, "chairman": 0}, {"health": -1, "alcohol": 0, "chairman": 0}]
+Area21.next_area = ["END GAME"]
 
-Area2 = Area(2)
-Area2.intro = "\n \n"
-Area2.choices = ["\n \n", 
-                 "\n \n", 
-                 "\n \n", 
-                 "\n \n"]
-Area2.outros = ["\n \n", 
-                "\n \n", 
-                "\n \n", 
-                "\n \n"]
-Area2.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
-Area2.next_area = [6,7,8,9]
-
-Area2 = Area(2)
-Area2.intro = "\n \n"
-Area2.choices = ["\n \n", 
-                 "\n \n", 
-                 "\n \n", 
-                 "\n \n"]
-Area2.outros = ["\n \n", 
-                "\n \n", 
-                "\n \n", 
-                "\n \n"]
-Area2.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
-Area2.next_area = [6,7,8,9]
-
-Area2 = Area(2)
-Area2.intro = "\n \n"
-Area2.choices = ["\n \n", 
-                 "\n \n", 
-                 "\n \n", 
-                 "\n \n"]
-Area2.outros = ["\n \n", 
-                "\n \n", 
-                "\n \n", 
-                "\n \n"]
-Area2.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
-Area2.next_area = [6,7,8,9]
-
-Area2 = Area(2)
-Area2.intro = "\n \n"
-Area2.choices = ["\n \n", 
-                 "\n \n", 
-                 "\n \n", 
-                 "\n \n"]
-Area2.outros = ["\n \n", 
-                "\n \n", 
-                "\n \n", 
-                "\n \n"]
-Area2.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
-Area2.next_area = [6,7,8,9]
-
-#do this for all 21 areas
-
-area_list = [Area1, Area2, Area3, Area4]
+area_list = [Area1, Area2, Area3, Area4, Area5, Area6, Area7, Area8, Area9, Area10, Area11, Area12, Area13, Area14, Area15, Area16, Area17, Area18, Area19, Area20, Area21]
 # to switch between areas: this can be imported into the main.py and use area_list as a normal variable with list indexing
 
