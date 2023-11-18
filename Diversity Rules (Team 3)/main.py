@@ -1,19 +1,19 @@
-from area import area
+from area import *
 
 from Area_list import *
 
 from player import *
 
+# player to know which is the location
+
 # instantiate area list
 # instantiate player
 # make it work in "general" and then invoke all methods from the area list
 def get_user_choice():
-    choices = {
-        '1': 'Choice 1',
-        '2': 'Choice 2',
-        '3': 'Choice 3',
-        '4': 'Choice 4',
-    }
+    choices = Area_list[0].choices # we need to put player location for the others
+    for choice in choices:
+        print (choice)        
+    
     while True:
         print("Select a choice:")
         for key, value in choices.items():
