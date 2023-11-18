@@ -10,9 +10,9 @@ from player import *
 # make it work in "general" and then invoke all methods from the area list
 
 print("\n\n ⚽ WELCOME TO THE BEST GAME YOU EVER PLAYED⚽!")
-print("HAVE FUN!")
+print("\nHAVE FUN!")
 print("---")
-print ("\n\nThe Wheel of fortune… You are thinking of the next OC and your and your direct reports’ OKRs completion status, while you do the last cross-check of your smart casual appearance in front of the mirror. After a long sight, you refocus your attention to less pressing matters: the football match tonight between Bulgaria and Hungary. Who will win tonight? Who should you be cheering for? Do you even care? How should you behave? Who will you be talking to? You leave to Hyatt to meet everyone at 18:45 sharp, knowing that from this point on you have full control over how the events of tonight unfold – but you will also need to own the consequences, let them be personal or professional...") 
+print ("\n\nThe Wheel of fortune… You are thinking of the next OC and your and your direct reports’ OKRs completion status, while you do the last cross-check of your smart casual appearance in front of the mirror. \nAfter a long sight, you refocus your attention to less pressing matters: the football match tonight between Bulgaria and Hungary. \nWho will win tonight? Who should you be cheering for? How should you behave? Who will you be talking to? \nYou leave to Hyatt, knowing that from this point on you have full control over how the events of tonight unfold – but you will also need to own the consequences, let them be personal or professional...") 
 
 player_name = input("\nEnter your name: ")
 
