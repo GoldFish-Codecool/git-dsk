@@ -79,14 +79,14 @@ while True: # should be while not_game-over condition
     elif player1.chairman < -4:
         print(f"Game over. Your favour with the Chairman reached {player1.chairman}. Chairman had enough of you. You are fired.")
         break
-    elif player1.location == 21 and player1.chairman > 4:
+    elif player1.location == 22 and player1.chairman > 4:
         print(f"You are home safely. The next day you get a letter from the Chairman - you are promoted.")
         break
-    elif player1.location == 21:
+    elif player1.location == 22:
         print(f"You win. You are home safely.")
         break
-    else:
-        player1.location = new_area
+    
+    player1.location = new_area
        
     #user_input = input("Do you want to quit the game? (y/n): ")
     #if user_input == "y":
