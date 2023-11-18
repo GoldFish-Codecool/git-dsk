@@ -1,7 +1,7 @@
 from area import *
 
 Area1 = Area(1)
-Area1.intro = "\n\nYou go around Hyatt, talking to the people you know. Time flies fast - however, you do not notice and decide to take a quick break to \"powder your nose\". However, by the time you are finished, you cannot find anyone and your phone has no reception. You cannot miss this football match!\nWhat do you do?\n"
+Area1.intro = "\nAT HYATT\nYou go around Hyatt, talking to the people you know. Time flies fast - however, you do not notice and decide to take a quick break to \"powder your nose\". However, by the time you are finished, you cannot find anyone and your phone has no reception. You cannot miss this football match!\nWhat do you do?\n"
 Area1.choices = ["\nYou decide to walk to the stadium and figure out from there. Should not take more than 10 minutes, so you are sure to arrive on time!\n", 
                  "\nYou also see a standard looking bus with darkened windows - you recall the group going together by bus. Maybe this is the best choice? But what if the bus goes to Kardjali... and you are stuck on it?\n", 
                  "\nYou notice a second bus as well - but this one looks more secure. Could it be the bulletproof one the Chairman requested? There are also more policemen sorrounding this bus.\n", 
@@ -15,7 +15,7 @@ Area1.next_area = [2,6,3,5]
 
 #Walking to the stadium
 Area2 = Area(2)
-Area2.intro = "\nThe protesters smile at you, however, probably they are here to join the riot. One of them addresses you directly, while the rest sorround you in a circle. After a few nice sentences, he pulls out a can of Kamenitsa from under his black leather jacket and hands it over to you. \n"
+Area2.intro = "\nWALK TO THE STADIUM\nThe protesters smile at you, however, probably they are here to join the riot. One of them addresses you directly, while the rest sorround you in a circle. After a few nice sentences, he pulls out a can of Kamenitsa from under his black leather jacket and hands it over to you. \n"
 Area2.choices = ["\nYou decide to take the beer. Anyway you have time, the others are just about to depart - you are also unsure what would happen if you reject? \n", 
                 "\nYou are not here to talk to some football rioters. You reject the beer and try to move forward. \n"
                 ]
@@ -41,7 +41,7 @@ Area3.next_area = [6,4,6]
 
 #QnA with Chairman on the bus
 Area4 = Area(4)
-Area4.intro = "\nFollowing a quick introduction with the Chairman, now is your time to shine! 10 uninterrupted minutes with one of the most influential Hungarians??? \n\nAs you start talking, the discussion quickly shifts towards football and the Hungarian's performance and history. The Chairman looks at you with a serious face and asks you: \nWho passed the ball to Ádám Szalai, who then scored Hungary's first Euro2016 goal against Austria? \n"
+Area4.intro = "\nQNA WITH THE CHAIRMAN\nFollowing a quick introduction with the Chairman, now is your time to shine! 10 uninterrupted minutes with one of the most influential Hungarians??? \n\nAs you start talking, the discussion quickly shifts towards football and the Hungarian's performance and history. The Chairman looks at you with a serious face and asks you: \nWho passed the ball to Ádám Szalai, who then scored Hungary's first Euro2016 goal against Austria? \n"
 Area4.choices = ["\nLászló Kleinheisler \n", 
                 "\nBalázs Dzsudzsák \n", 
                 "\nZoltán Gera \n", 
@@ -55,7 +55,7 @@ Area4.next_area = [6,6,6]
 
 #Drive with the Mercedes
 Area5 = Area(5)
-Area5.intro = "\nYou notice there is very fancy champagne and caviar on ice platter offered in the car. The driver looks back at you, encouraging you to enjoy those items.\n"
+Area5.intro = "\nDRIVE WITH THE MERCEDES\nYou notice there is very fancy champagne and caviar on ice platter offered in the car. The driver looks back at you, encouraging you to enjoy those items.\n"
 Area5.choices = ["\nYou decide to try the champagne and the caviar - they look really fancy and appetizing! \n", 
                 "\nYou reject the champagne and the caviar, to the visible dismay of the driver. \n"
                 ]
@@ -67,7 +67,7 @@ Area5.next_area = [6,6]
 
 #Sitting down in the stadium
 Area6 = Area(6)
-Area6.intro = "\nYou enter the stadium and arrive to the Hungarian VIP lounge. After a while, you are rushed to sit down in the stadium to experience the match, so you head outside to the cold. \nYou remember your allocated seat - row 1, seat 1. However, both the stadium and the VIP section are empty. There is plenty of space! You see some DSK colleagues head to sit also in the middle in a different row. \n"
+Area6.intro = "\nSITTING IN STADIUM\nYou enter the stadium and arrive to the Hungarian VIP lounge. After a while, you are rushed to sit down in the stadium to experience the match, so you head outside to the cold. \nYou remember your allocated seat - row 1, seat 1. However, both the stadium and the VIP section are empty. There is plenty of space! You see some DSK colleagues head to sit also in the middle in a different row. \n"
 Area6.choices = ["\nRegardless, you decide to go to your assigned space alone. Better safe than sorry! \n", 
                 "\nYou join some of the DSK colleagues who headed to sit in the middle - you are here to see the match and you prefer to enjoy it in nice company. \n", 
                 "\nYou notice there are some leather chairs in the middle - they seem more comfortable than any other option, and noone is around securing the space or trying to sit there. Comfort first, the cold is enough to tolerate! \n", 
@@ -82,7 +82,7 @@ Area6.next_area = [7,7,7,7]
 
 #First goal (Hungary)
 Area7 = Area(7)
-Area7.intro = "\nThe Hungarian team scored the 1st goal! This is amazing - you should be happy, regardless of nationality - rights? \n"
+Area7.intro = "\nFIRST HUNGARIAN GOAL\nThe Hungarian team scored the 1st goal! This is amazing - you should be happy, regardless of nationality - rights? \n"
 Area7.choices = ["\nYou are impartial - did not even notice that the goal happened. You continue playing with your phone.\n",
                 "\nYou decide to celebrate this event! You take a shot with some other happy fans, when they approach you. Cheers! \n", 
                 "\nYou cheer with everyone else for the success of the Hungarian team. \n", 
@@ -100,7 +100,7 @@ Area7.next_area = [8,8,8,8,8,23]
 
 #Second goal (Bulgaria)
 Area8 = Area(8)
-Area8.intro = "\nThe Bulgarian team scored a goal! This is not so amazing - but a tie is still fine for Hungary, so it not all hope is lost. \n"
+Area8.intro = "\nFIRST BULGARIAN GOAL\nThe Bulgarian team scored a goal! This is not so amazing - but a tie is still fine for Hungary, so it not all hope is lost. \n"
 Area8.choices = ["\nYou are impartial - did not even notice that the goal happened. You continue playing with your phone.\n",
                 "\nYou decide to cheer up your mood with some alcohol. Cheers! \n", 
                 "\nYou chant with everyone else to energize the Hungarian team. \n", 
@@ -118,7 +118,7 @@ Area8.next_area = [9,9,9,9,9,23]
 
 #Half-time break
 Area9 = Area(9)
-Area9.intro = "\nThe first half of the game is over. One more half to go. You head to the Hungarian VIP lounge with everyone else, with some chit-chats along the way. Once you arrive to the VIP zone, you look around, wondering what to do? \n"
+Area9.intro = "\nHALF-TIME BREAK\nThe first half of the game is over. One more half to go. You head to the Hungarian VIP lounge with everyone else, with some chit-chats along the way. Once you arrive to the VIP zone, you look around, wondering what to do? \n"
 Area9.choices = ["\nHave a drink - the ones they serve seem to be really fancy! \n", 
                 "\nYou decide to socialize with some people. You are here to network and build relations, if possible. \n", 
                 "\nGo back to the stadium - you have some emails to read - and anyway, you are not in the mood to chitchat during such a short break. \n" 
@@ -132,7 +132,7 @@ Area9.next_area = [13,10,13]
 
 #With who to socialize with?
 Area10 = Area(10)
-Area10.intro = "\nYou see many people engaged in conversations already, some closer to the bar, some more further away. \n"
+Area10.intro = "\nSOCIALIZE\nYou see many people engaged in conversations already, some closer to the bar, some more further away. \n"
 Area10.choices = ["\nYou decide to stay with your colleagues - better safe than sorry! \n", 
                  "\nYou see an opportunity to talk with some Supervisory board members - this is your chance! You advance towards them. \n", 
                  "\nYou notice the Chairman - to everyone's surpise is standing alone. Can you maybe make a perfect impression now during the break? \n"
@@ -146,7 +146,7 @@ Area10.next_area = [13,11,12]
 
 #Talking with Supervisory board
 Area11 = Area(11)
-Area11.intro = "\nYou feel maybe a but unwelcomed. This does not disturb you though, as you confidently initiate a conversation about what else, than football? All is fine, up to a point when you have to answer a question about Hungarian football: \nWho was Hungary's last opponent in the 2018 FIFA World Cup qualifiers? (as of February 2017) \n"
+Area11.intro = "\nWITH THE SUPERVISORY BOARD\nYou feel maybe a but unwelcomed. This does not disturb you though, as you confidently initiate a conversation about what else, than football? All is fine, up to a point when you have to answer a question about Hungarian football: \nWho was Hungary's last opponent in the 2018 FIFA World Cup qualifiers? (as of February 2017) \n"
 Area11.choices = ["\nLatvia \n", 
                  "\nAndorra \n", 
                  "\nSwitzerland \n" 
@@ -160,7 +160,7 @@ Area11.next_area = [13,13,13]
 
 #Talking with the Chairman
 Area12 = Area(12)
-Area12.intro = "\nThere is no chance now to second guess. You address the Chairman directly and try to steer the conversation into pleasant grounds - like football. It is going relatively fine, before he asks you: \nIn which city did Hungary lose against Belgium at Euro2016 Round of 16? \n"
+Area12.intro = "\nTALKING WITH CHAIRMAN\nThere is no chance now to second guess. You address the Chairman directly and try to steer the conversation into pleasant grounds - like football. It is going relatively fine, before he asks you: \nIn which city did Hungary lose against Belgium at Euro2016 Round of 16? \n"
 Area12.choices = ["\nTouluse \n", 
                  "\nParis \n", 
                  "\nNice \n", 
@@ -174,7 +174,7 @@ Area12.next_area = [13,13,13,13]
 
 #3rd goal for Bulgaria
 Area13 = Area(13)
-Area13.intro = "\nThe Bulgarian team scored a goal! This is not so amazing - Bulgaria is in the lead. Maybe not all hope is lost though... there is still some time left. \n"
+Area13.intro = "\nSECOND BULGARIAN GOAL\nThe Bulgarian team scored a goal! This is not so amazing - Bulgaria is in the lead. Maybe not all hope is lost though... there is still some time left. \n"
 Area13.choices = ["\nYou are impartial - did not even notice that the goal happened. You continue playing with your phone.\n",
                 "\nYou decide to cheer up your mood with some alcohol. Cheers! \n", 
                 "\nYou chant with everyone else to energize the Hungarian team. \n", 
@@ -192,7 +192,7 @@ Area13.next_area = [14,14,14,14,14,23]
 
 #Fourth goal (Hungary)
 Area14 = Area(14)
-Area14.intro = "\nThe Hungarian team scored its second goal just last minute! This is amazing - you should be happy, regardless of nationality - rights? A tie is definitely better than a loss! \n"
+Area14.intro = "\nSECOND HUNGARIAN GOAL\nThe Hungarian team scored its second goal just last minute! This is amazing - you should be happy, regardless of nationality - rights? A tie is definitely better than a loss! \n"
 Area14.choices = ["\nYou are impartial - did not even notice that the goal happened. You continue playing with your phone.\n",
                 "\nYou decide to celebrate this event! You take a shot with some other happy fans, when they approach you. Cheers! \n", 
                 "\nYou cheer with everyone else for the success of the Hungarian team. \n", 
@@ -210,7 +210,7 @@ Area14.next_area = [15,15,15,15,15,23]
 
 #End of the game
 Area15 = Area(15)
-Area15.intro = "\nUhh… this was close. No matter your nationality, you are happy (at least partially) that the game did not end with a Bulgarian win. People stand up and start leaving the stadium. You follow the crowd, until you see some stairs going downstairs, just in front of where you could enter the VIP lounge. What do you do? \n"
+Area15.intro = "\nEND OF THE MATCH\nUhh… this was close. No matter your nationality, you are happy (at least partially) that the game did not end with a Bulgarian win. People stand up and start leaving the stadium. You follow the crowd, until you see some stairs going downstairs, just in front of where you could enter the VIP lounge. What do you do? \n"
 Area15.choices = ["\nYou see Tamas going down the stairs - he must know better! You decide to follow him without any questions asked. \n", 
                 "\nAfter some elaboration you go with the crowd to the VIP zone. \n", 
                 "\nYou notice a press conference is about to start in a room they just opened. It might be interesting and worth checking out. \n" 
@@ -224,7 +224,7 @@ Area15.next_area = [18,16,17]
 
 #VIP lounge after the game
 Area16 = Area(16)
-Area16.intro = "\nPeople are already packing and preparing to leave. You can tell the Hungarians might be eager to get to the airport and head home soon. However, you notice some people saying cheers and congrats with beers and whiskeys. \n"
+Area16.intro = "\nVIP LOUNGE\nPeople are already packing and preparing to leave. You can tell the Hungarians might be eager to get to the airport and head home soon. However, you notice some people saying cheers and congrats with beers and whiskeys. \n"
 Area16.choices = ["\nYou decide to celebrate with the Hungarians - a nice cheers never hurt, right? You might even build new connections! \n", 
                 "\nYou politely say goodbye to the visitors you met during the day and leave relatively quickly. \n"
                 ]
@@ -235,7 +235,7 @@ Area16.attribute_updates = [{"health": 0, "alcohol": 1, "chairman": 0}, {"health
 Area16.next_area = [18,18,18]
 
 Area17 = Area(17)
-Area17.intro = "\nBefore you could leave, a nice young lady approaches you, with a camera guy closely following and shoves the microphone in your face once she realizes that you are from the Hungarian lounge. Before you have any change to react, you are looking face-to-face with a camera, a microphone and all the lightning. You try to do your best saying the most positive and generic answers you can ever come up with. However, this attempt is most noticable and the reporter also catches is, so she tries to get you out of your comfort zone in a nice way and ask you a question about the match: \nDo you think the referee was fair, or not? \n"
+Area17.intro = "\nPRESS CONFERENCE\nBefore you could leave, a nice young lady approaches you, with a camera guy closely following and shoves the microphone in your face once she realizes that you are from the Hungarian lounge. Before you have any change to react, you are looking face-to-face with a camera, a microphone and all the lightning. You try to do your best saying the most positive and generic answers you can ever come up with. However, this attempt is most noticable and the reporter also catches is, so she tries to get you out of your comfort zone in a nice way and ask you a question about the match: \nDo you think the referee was fair, or not? \n"
 Area17.choices = ["\nYes \n", 
                  "\nNo \n" 
                  ]
@@ -246,7 +246,7 @@ Area17.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": -5}, {"healt
 Area17.next_area = [18,18]
 
 Area18 = Area(18)
-Area18.intro = "\nAfter leaving the stadium, you feel very close to getting to the end of your day. However, suddenly everyone you know from DSK dissappeared, there is noone to follow anymore. What do you do? \n"
+Area18.intro = "\nON THE WAY HOME\nAfter leaving the stadium, you feel very close to getting to the end of your day. However, suddenly everyone you know from DSK dissappeared, there is noone to follow anymore. What do you do? \n"
 Area18.choices = ["\nIt was a long day - you decide to walk home. \n", 
                 "\nYou see the Hungarian people boarding the VIP bus - probably the others are on it already as well. \n", 
                 "\nYou see and hear fans close to you celebrating - you decide that the night is young, it is time for a well-deserved celebration! \n"
@@ -259,7 +259,7 @@ Area18.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}, {"health
 Area18.next_area = [19,20,21]
 
 Area19 = Area(19)
-Area19.intro = "\nAfter a while, you come up to 2 path to get to your car. \n"
+Area19.intro = "\nWALKING HOME\nAfter a while, you come up to 2 path to get to your car. \n"
 Area19.choices = ["\nThere is chance to go straight ahead - seems well lit, without any people in sight. However, there are many garbage on the ground and you might also smell something burning in that direction - maybe a trash bin? \n", 
                 "\nYou are aware there is an alternative - a little bit longer, but all across darker areas. \n"
                 ]
@@ -270,7 +270,7 @@ Area19.attribute_updates = [{"health": -1, "alcohol": 0, "chairman": 0}, {"healt
 Area19.next_area = [22, 22]
 
 Area20 = Area(20)
-Area20.intro = "\nAs you onboard the bus, you notice people looking at you with a strange face, wondering if you are Hungarian or Bulgarian? \n"
+Area20.intro = "\nBOARDING THE VIP BUS\nAs you onboard the bus, you notice people looking at you with a strange face, wondering if you are Hungarian or Bulgarian? \n"
 Area20.choices = ["\nBulgarian \n", 
                  "\nHungarian \n"
                 ]
@@ -281,7 +281,7 @@ Area20.attribute_updates = [{"health": -1, "alcohol": 0, "chairman": -3}, {"heal
 Area20.next_area = [22,22]
 
 Area21 = Area(21)
-Area21.intro = "\nThe fans rooted for Bulgaria, so they are drinking in dissappointment. You might also see a few familiar faces, you met earlier tonight as well? Nonetheless, they welcome you with open arms, offering you a drink. \n"
+Area21.intro = "\nJOINING THE FANS\nThe fans rooted for Bulgaria, so they are drinking in dissappointment. You might also see a few familiar faces, you met earlier tonight as well? Nonetheless, they welcome you with open arms, offering you a drink. \n"
 Area21.choices = ["\nYou take the drink, which looks like a weathered can of low-quality beer. You start discussing the match passionately. \n", 
                 "\nYou reject the drink, and decide it might be more wiser to head home \n", 
                 ]
