@@ -69,4 +69,14 @@ while True: # should be while not_game-over condition
     player1.update_chairman(chairman_update)
     print(f"Your chairman points are {player1.chairman} ")
 
+    if player1.health < 1:
+        print(f"Game over. Your health reached {player1.health}. Your are in hospital.")
+        break
+    elif player1.alcohol > 3:
+        print(f"Game over. Your alcohol level exceeds {player1.alcohol} promils. Your are drunk and in jail.")
+        break
+    elif player1.chairman < -4:
+        print(f"Game over. Your favour with the Chairman reached {player1.chairman}. Chairman had enough of you. You are fired.")
+        break
+    else:
     player1.location = new_area
