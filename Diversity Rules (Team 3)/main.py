@@ -30,6 +30,7 @@ def get_user_choice():
         next_area = area_list[player1.location].next_area
         intro = area_list[player1.location].intro
         outros = area_list[player1.location].outros
+        attribute_updates = area_list[player1.location].attribute_updates
         
         print(intro)
         
@@ -48,6 +49,8 @@ def get_user_choice():
             print("Invalid choice. Please try again.")
 
 while True: # should be while not_game-over condition
+    player1.update_health = get_user_choice()
+    print(f"Your health is {player1.health} ")
     new_area = get_user_choice()
     player1.location = new_area
 
