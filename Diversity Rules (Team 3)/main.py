@@ -32,12 +32,15 @@ def get_user_choice():
             print (i+1, choices [i]) 
         print("Select a choice:")
         
-        user_input = input("Enter the number of your choice: ")
+        user_input = int(input("Enter the number of your choice: "))-1
 
         if user_input in range(len(choices)):
-            return choices[user_input]
+            print(choices[user_input])
+            return next_area[user_input]-1
         else:
             print("Invalid choice. Please try again.")
 
+while True: # should be while not_game-over condition
+    new_area = get_user_choice()
+    player1.location = new_area
 
-get_user_choice()
