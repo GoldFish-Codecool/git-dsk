@@ -34,6 +34,10 @@ while True:
     if win(board):
         print_table(board)
         print(f"Player {player_turn[0]} wins!")
+        winner = player_A[0] if player_turn == player_A else player_B[0]
+        opponent = player_B[0] if player_turn == player_A else player_A[0]
+        xoro= player_turn[1]
+        add_winner(winner, opponent, xoro)
         break
     
     if is_board_full(board):
