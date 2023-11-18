@@ -233,18 +233,16 @@ Area16.outros = ["\nYou have fun for 10-15 minutes, meeting a few people from th
 Area16.attribute_updates = [{"health": 0, "alcohol": 1, "chairman": 0}, {"health": 0, "alcohol": 0, "chairman": 0}]
 Area16.next_area = [18,18,18]
 
-Area2 = Area(2)
-Area2.intro = "\n \n"
-Area2.choices = ["\n \n", 
-                 "\n \n", 
-                 "\n \n", 
-                 "\n \n"]
-Area2.outros = ["\n \n", 
-                "\n \n", 
-                "\n \n", 
-                "\n \n"]
-Area2.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
-Area2.next_area = [6,7,8,9]
+Area17 = Area(17)
+Area17.intro = "\nBefore you could leave, a nice young lady approaches you, with a camera guy closely following and shoves the microphone in your face once she realizes that you are from the "Hungarian lounge". Before you have any change to react, you are looking face-to-face with a camera, a microphone and all the lightning. You try to do your best saying the most positive and generic answers you can ever come up with. However, this attempt is most noticable and the reporter also catches is, so she tries to get you out of your comfort zone in a nice way and ask you a question about the match: Do you think the referee was fair, or not? \n"
+Area17.choices = ["\nYes \n", 
+                 "\nNo \n" 
+                 ]
+Area17.outros = ["\nFor a second, you think you got the answer right - the interviewer and the colleagues start smiling. However, soon you realize that this was more of a petty smile than anything else. As you quickly leave the stadium, you will never be sure where this interview will be published, and if it is, where and to whom… God forbid you become the next meme of the Hungarian football fans! \n", 
+                "\nFor a second, you think you got the answer right - the interviewer and the colleagues start smiling. However, soon you realize that this was more of a petty smile than anything else. As you quickly leave the stadium, you will never be sure where this interview will be published, and if it is, where and to whom… God forbid you become the next meme of the Hungarian football fans! \n", 
+                ]
+Area17.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": -5}, {"health": 0, "alcohol": 0, "chairman": -3}]
+Area17.next_area = [18,18]
 
 Area2 = Area(2)
 Area2.intro = "\n \n"
