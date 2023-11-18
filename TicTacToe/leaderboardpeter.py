@@ -18,7 +18,7 @@ def add_winner(winner, opponent, xoro) :
     cur.execute("INSERT INTO tictatoe (winner, opponent, xoro) VALUES (%s, %s, %s) RETURNING iD;", (winner, opponent, xoro))
     winner_id = cur.fetchone()[0]
     conn.commit()
-    print (f"Winner added with id: {product_id}")
+    print (f"Winner added with id: {winner_id}")
 
     conn.commit()
     print(f"Winner with id {winner_id} updated successfully")
@@ -38,7 +38,7 @@ if __name__ == "__main__":
         if choice == "1": 
             get_winners()
         elif choice == "2" :
-            name = input("Winner’s name: ")
+            name = input("Winner name: ")
             quantity = input("Opponent: ")
             price = input("xoro: ")
             add_winner(winner, opponent, xoro)
