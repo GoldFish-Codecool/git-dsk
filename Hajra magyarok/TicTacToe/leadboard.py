@@ -1,7 +1,8 @@
 import json
+import os
 from player import Player
 
-FILE = 'board.json'
+FILE = os.path.dirname(os.path.abspath(__file__)) + '/board.json'
 
 class LeadershipBoard:
     def __init__(self):
