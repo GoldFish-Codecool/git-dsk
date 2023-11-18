@@ -1,5 +1,4 @@
 import psycopg2
-#from dbPostGre import *
 
 DB_NAME ="hucodjek"
 USER = "hucodjek"
