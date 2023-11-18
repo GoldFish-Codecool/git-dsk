@@ -53,44 +53,49 @@ Area4.outros = ["\nThe Chairmans nods with a maybe even impressed look on his fa
 Area4.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 5},{"health": 0, "alcohol": 0, "chairman": -5},{"health": 0, "alcohol": 0, "chairman": -5}]
 Area4.next_area = [6,6,6]
 
-Area2 = Area(2)
-Area2.intro = "\n \n"
-Area2.choices = ["\n \n", 
-                 "\n \n", 
-                 "\n \n", 
-                 "\n \n"]
-Area2.outros = ["\n \n", 
-                "\n \n", 
-                "\n \n", 
-                "\n \n"]
-Area2.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
-Area2.next_area = [6,7,8,9]
+#Drive with the Mercedes
+Area5 = Area(5)
+Area5.intro = "\nYou notice there is very fancy champagne and caviar on ice platter offered in the car. The driver looks back at you: - Those are very nice drinks prepared just for you. Enjoy the ride and don't let those go to waste! We will be there in 5 minutes tops, catching up to the bus. \n"
+Area5.choices = ["\nYou decide to try the champagne and the caviar - they look really fancy and appetizing! \n", 
+                 "\nYou reject the champagne and the caviar, to the visible dismay of the driver. \n", 
+                 ]
+Area5.outros = ["\nAs you exit the car, the others also just arrive, including the Chairman. He looks at you with a non-pleasant look as you exit the car, and you notice him whispering something to the person standing next to him. \n", 
+                "\nAs you exit the car, the others also just arrive, including the Chairman. He looks at you with a non-pleasant look as you exit the car, and you notice him whispering something to the person standing next to him. \n", 
+                ]
+Area5.attribute_updates = [{"health": 0, "alcohol": 1, "chairman": -3}, {"health": 0, "alcohol": 0, "chairman": -3}]
+Area5.next_area = [6,6]
 
-Area2 = Area(2)
-Area2.intro = "\n \n"
-Area2.choices = ["\n \n", 
-                 "\n \n", 
-                 "\n \n", 
-                 "\n \n"]
-Area2.outros = ["\n \n", 
-                "\n \n", 
-                "\n \n", 
-                "\n \n"]
-Area2.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
-Area2.next_area = [6,7,8,9]
+#Sitting down in the stadium
+Area6 = Area(6)
+Area6.intro = "\nYou enter the stadium and after some security checks, you are in the Hungarian VIP lounge with everyone else. You look around, but decide to play it safe for now and stay with DSK colleagues, until you are rushed to sit down in the stadium to experience the match. You follow the orders and head outside to the cold. You also remember from the security checks your allocated seat - row 1, seat 1. However, both the stadium and the VIP section are empty. There is plenty of space! You see Tamas sitting with some Hungarians (clearly not on his assigned spot), and some DSK colleagues head to sit also in the middle in a different row. \n"
+Area6.choices = ["\nRegardless, you decide to go to your assigned space alone. Better safe than sorry! \n", 
+                "\nYou join some of the DSK colleagues who headed to sit in the middle - you are here to see the match and you prefer to enjoy it in nice company. \n", 
+                "\nYou notice there are some leather chairs in the middle - they seem more comfortable than any other option, and noone is around securing the space or trying to sit there. Comfort first, the cold is enough to tolerate! \n", 
+                "\nNoone seem to notice your presence, and you are alone, and it is cold. Maybe it is better to go back and enjoy the match from the warmth of the VIP lounge? For sure, some other people must have stayed there as well! \n"]
+Area6.outros = ["\nSome other rule-abiding colleagues from DSK also arrive! You smile - this match will be fun! \n", 
+                "\nAs you settle down, you notice the Chairman and some Bulgarian football association people approaching. They sit down in the leather chairs in front of you. You start to smile - you will be in TV probably! Though, maybe the Chairman wanted someone else to sit there? You will never know... \n", 
+                "\nAs you settle down, you notice the Chairman and some Bulgarian football association people approaching, looking at you with a not so happy face. Before you could do anything, a few security people approach you and escort you to your assigned seat.  \n", 
+                "\nYou have fun in the VIP zone with some random people, who convince you to take also some alcohol - anyway, anyone important to judge is watching the match, so what harm could it do? Nonetheless, after 2 shots, you decide not to continue with them and you join your colleagues in your allocated space, just in time to see live the first goal. \n"]
+Area6.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}, {"health": 0, "alcohol": 0, "chairman": -1}, {"health": 0, "alcohol": 0, "chairman": -5}, {"health": 0, "alcohol": 2, "chairman": -3}]
+Area6.next_area = [7,7,7,7]
 
-Area2 = Area(2)
-Area2.intro = "\n \n"
-Area2.choices = ["\n \n", 
-                 "\n \n", 
-                 "\n \n", 
-                 "\n \n"]
-Area2.outros = ["\n \n", 
-                "\n \n", 
-                "\n \n", 
-                "\n \n"]
-Area2.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
-Area2.next_area = [6,7,8,9]
+#First goal (Hungary)
+Area7 = Area(7)
+Area7.intro = "\nThe Hungarian team scored the 1st goal! This is amazing - you should be happy, regardless of nationality - rights? \n"
+Area7.choices = ["\nYou are impartial - did not even notice that the goal happened. You continue playing with your phone.\n",
+                "\nYou decide to celebrate this event! And what better tool to do so, then to take a shot with some other happy fans, when they approach you? It is a great networking opportinity to be with people close to the Chairman!!! Cheers! \n", 
+                "\nYou (maybe fake?) cheer with everyone else for the success of the Hungarian team - even if you do not care deep-down about the results. \n", 
+                "\nThe Bulgarians just received a goal… you let out a slight boo and dissappointed voice. \n", 
+                "\nYou start cheering very loud - the stadium is empty but you are here to ensure there is some mood, right? \n",
+                "\nYou are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way. Let's make this event fun!!! "]
+Area7.outros = ["\nNothing happens... you were never even paying attention...\n",
+                "\nYou shiver a bit from the shot but you are satisfied. You continue watching the game with your new friends for a while, before going back to your colleagues. \n", 
+                "\nThe Chairman hears you shouting and cheering - he seems happy to have a new fan in the club. \n", 
+                "\nThe Charman notices your reaction and lack of cheering: you are part of OTP Group, remember? \n", 
+                "\nThe Chairman hears you shouting and cheering - he seems happy to have a new fan in the club. \n",
+                "\nWell, this was not one of the best ideas. Not only you hurt yourself jumping down the stairs, you also drew a lot of police attention, who were already nervous due to the riots. They don't give you any chance to explain: you are taken to JAIL."]
+Area7.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": -1}, {"health": 0, "alcohol": 1, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": -3}, {"health": 0, "alcohol": 0, "chairman": 3}, {"health": 0, "alcohol": 0, "chairman": -100}]
+Area7.next_area = [8,8,8,8,8,8]
 
 Area2 = Area(2)
 Area2.intro = "\n \n"
