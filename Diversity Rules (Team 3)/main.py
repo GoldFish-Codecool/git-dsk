@@ -17,12 +17,12 @@ print(f"Welcome {player_name} ")
 print(f"Your health is {player1.health} ")
 print(f"Your alcohol level is {player1.alcohol} ")
 print(f"Your favor with the Chairman is {player1.chairman} ")
-player1.update_health(-1)
-player1.update_alcohol(1)
-player1.update_chairman(-1)
-print(f"Your health is {player1.health} ")
-print(f"Your alcohol level is {player1.alcohol} ")
-print(f"Your favor with the Chairman is {player1.chairman} ")
+#player1.update_health(-1)
+#player1.update_alcohol(1)
+#player1.update_chairman(-1)
+#print(f"Your health is {player1.health} ")
+#print(f"Your alcohol level is {player1.alcohol} ")
+#print(f"Your favor with the Chairman is {player1.chairman} ")
 
 def get_user_choice():
           
@@ -44,7 +44,7 @@ def get_user_choice():
         if user_input in range(len(choices)):
             print(choices[user_input])
             print(outros[user_input])
-            return next_area[user_input]-1
+            return user_input, next_area[user_input]-1
         elif user_input.lower() == "quit":
             print("You are exiting the game..Thank you for playing")
             sys.exit(0)
@@ -55,18 +55,18 @@ new_area = 0
 
 while True: # should be while not_game-over condition
     old_area = new_area
-    new_area = get_user_choice()
+    user_input, new_area = get_user_choice()
 
-    print(player1.location, old_area)  
-    health_update = area_list[player1.location].attribute_updates [old_area]["health"]
+    print(player1.location, user_input, old_area)  
+    health_update = area_list[player1.location].attribute_updates [user_input]["health"]
     player1.update_health(health_update)
     print(f"Your health is {player1.health} ")
 
-    alcohol_update = area_list[player1.location].attribute_updates [old_area]["alcohol"]
+    alcohol_update = area_list[player1.location].attribute_updates [user_input]["alcohol"]
     player1.update_alcohol(alcohol_update)
     print(f"Your alcohol level is {player1.alcohol} ")
 
-    chairman_update = area_list[player1.location].attribute_updates [old_area]["chairman"]
+    chairman_update = area_list[player1.location].attribute_updates [user_input]["chairman"]
     player1.update_chairman(chairman_update)
     print(f"Your chairman points are {player1.chairman} ")
 
