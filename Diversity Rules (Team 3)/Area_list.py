@@ -207,31 +207,31 @@ Area14.outros = ["\nNothing happens... you were never even paying attention...\n
 Area14.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": -1}, {"health": 0, "alcohol": 1, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": -3}, {"health": 0, "alcohol": 0, "chairman": 3}, {"health": 0, "alcohol": 0, "chairman": -100}]
 Area14.next_area = [15,15,15,15,15,15]
 
-Area2 = Area(2)
-Area2.intro = "\n \n"
-Area2.choices = ["\n \n", 
-                 "\n \n", 
-                 "\n \n", 
-                 "\n \n"]
-Area2.outros = ["\n \n", 
-                "\n \n", 
-                "\n \n", 
-                "\n \n"]
-Area2.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
-Area2.next_area = [6,7,8,9]
+#End of the game
+Area15 = Area(15)
+Area15.intro = "\nUhh… this was close. No matter your nationality, you are happy (at least partially) that the game did not end with a Bulgarian win. You remember seeing the Chairman standing up at 93 minutes (3 mins left of the game), with dissappointment - and maybe nervousness - in his face. But you remind yourself - all is good if the end is good. With the goal in the last minute, Hungary tied and are now officially qualified for the World Championship. People stand up and start leaving the stadium. You follow the crowd, until you see some stairs going downstairs, just in front of where you could enter the VIP lounge. What do you do? \n"
+Area15.choices = ["\nYou see Tamas going down the stairs - he must know better! You decide to follow him without any questions asked. \n", 
+                 "\nAfter some elaboration you go with the crowd to the VIP zone. \n", 
+                 "\nYou notice a press conference is about to start in a room they just opened. It might be interesting and worth checking out. \n", 
+                 ]
+Area15.outros = ["\nYou leave the stadium safe. Maybe you missed to say Good Bye to a few Hungarians, but probably noone will notice. \n", 
+                "\nAs you enter the VIP zone for at least the 3rd time, you feel the excited buzz of the room - this was close! \n", 
+                "\nAs you enter the press conference, you anticipate to feel the vibe of the room - many people running around, people waiting to interview, some professional setup. However, none of this happens, it is very empty. \n", 
+                ]
+Area15.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}, {"health": 0, "alcohol": 0, "chairman": 0}, {"health": 0, "alcohol": 0, "chairman": 0}]
+Area15.next_area = [18,16,17]
 
-Area2 = Area(2)
-Area2.intro = "\n \n"
-Area2.choices = ["\n \n", 
-                 "\n \n", 
-                 "\n \n", 
-                 "\n \n"]
-Area2.outros = ["\n \n", 
-                "\n \n", 
-                "\n \n", 
-                "\n \n"]
-Area2.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
-Area2.next_area = [6,7,8,9]
+#VIP lounge after the game
+Area16 = Area(16)
+Area16.intro = "\nPeople are already packing and preparing to leave. You can tell the Hungarians might be eager to get to the airport and head home soon. However, you notice some people saying cheers and congrats with beers and whiskeys. \n"
+Area16.choices = ["\nYou decide to celebrate with the Hungarians - a nice cheers never hurt, right? You might even build new connections! \n", 
+                 "\nYou politely say goodbye to the visitors you met during the day and leave relatively quickly. \n", 
+                 ]
+Area16.outros = ["\nYou have fun for 10-15 minutes, meeting a few people from the Hungarian football assosiaction. You cannot even count how many times you raised your glass of alcohol to say cheers. \n", 
+                "\nYou leave the room, just in time to see people gathering for the bus that took them to the stadium. \n", 
+                ]
+Area16.attribute_updates = [{"health": 0, "alcohol": 1, "chairman": 0}, {"health": 0, "alcohol": 0, "chairman": 0}]
+Area16.next_area = [18,18,18]
 
 Area2 = Area(2)
 Area2.intro = "\n \n"
