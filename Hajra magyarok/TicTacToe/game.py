@@ -7,20 +7,22 @@ from leadboard import LeadershipBoard
 
 
 class Game:
-    def __init__(self, AI = 2):
+    def __init__(self, AI = 2, difficulty = 2):
         self.leadership_board = LeadershipBoard()
         self.board = Board()
         self.AI = AI  # 1: Player vs Player mode, 2: Player vs AI mode, 3: AI vs AI mode
+        self.difficulty = difficulty
         self.player1 = None
         self.player2 = None
         self.active_player = None
         self.status = True  # True: Game is on, False: Game is over
         self.message = ''
 
-        # Initaite the game. Starts with players. Print board.
+        # Initaite the game. 
         self.initiate_game()
     
     def initiate_game(self):
+    # Initaite the game. Starts with players. Print board.
         if self.AI == 3: # AI vs AI
             self.player1 = Player('Computer 1', 'X', True)
             self.player2 = Player('Computer 2', 'O', True)
@@ -38,6 +40,10 @@ class Game:
         self.message = f'{self.active_player.name} turn ({self.active_player.symbol}).'
 
     def play_game(self):
+        # Welcome - Print player names. 
+        print(f'\n{self.player1.name} ({self.player1.symbol}) vs {self.player2.name} ({self.player2.symbol})\n')
+        input('Press Enter to continue...')
+
         # Play the game
         while self.status:
             # Clear the screen
@@ -68,7 +74,7 @@ class Game:
             else:
                 self.message = f'{move} is not a valid move. Please try again. \n\n{self.active_player.name} turn.'
 
-        # Clear the screen. Print final board. Print results.
+        # Close the game - Clear the screen. Print final board. Print results.
         os.system('cls' if os.name == 'nt' else 'clear')
         self.board.display_board()
         print(self.message)
@@ -86,27 +92,33 @@ class Game:
     # Get the AI's move
         possible_moves = [key for key in self.board.board.keys() if self.board.board[key] == '•']
         
-        # Check for winning move
-        symbol = self.active_player.symbol
-        for move in possible_moves:
-            board = self.board.board.copy()
-            board[move] = symbol
-            if self.check_for_winners(board):
-                return move
+        if self.difficulty > 1:
+            # Check for winning move
+            symbol = self.active_player.symbol
+            for move in possible_moves:
+                board = self.board.board.copy()
+                board[move] = symbol
+                if self.check_for_winners(board):
+                    return move
 
-        # Prevent easy lose
-        symbol = 'X' if self.active_player.symbol == 'O' else 'O'
-        for move in possible_moves:
-            board = self.board.board.copy()
-            board[move] = symbol
-            if self.check_for_winners(board):
+            # Prevent easy lose
+            symbol = 'X' if self.active_player.symbol == 'O' else 'O'
+            for move in possible_moves:
+                board = self.board.board.copy()
+                board[move] = symbol
+                if self.check_for_winners(board):
+                    return move
+        
+        # Unbeatable move
+        if self.difficulty > 2:
+            move = self.AI_unbeatable_move(possible_moves, symbol)
+            if move:
                 return move
 
         # Randomly choose a move
         move = random.choice(possible_moves)
 
         return move
-
     
     def make_move(self, move):
     # Make the move
@@ -140,7 +152,6 @@ class Game:
         else:
             self.message = f'{move} is not empty. Please try again. \n\n{self.active_player.name} turn ({self.active_player.symbol}).'
 
-
     def check_for_draw(self):
     # Check if the board is full, which means a draw
         if '•' not in self.board.board.values():
@@ -163,4 +174,54 @@ class Game:
             if board[combination[0]] == board[combination[1]] == board[combination[2]] != '•':
                 return True
     
+    def AI_unbeatable_move(self, possible_moves, symbol):
+    # Check if there is a combination to block
+        unbeatable_combinations = [
+            [['a1'], ['a3', 'c1'], ['c3']],
+            [['a3'], ['a1', 'c3'], ['c1']],
+            [['c1'], ['a1', 'c3'], ['a3']],
+            [['c3'], ['a3', 'c1'], ['a1']],
 
+            [['a1', 'c3'], [], ['c1', 'a3']],
+            [['c1', 'a3'], [], ['a1', 'c3']],
+
+            [['a2', 'b1'], ['a3', 'c1'], ['a1']],
+            [['a2', 'b3'], ['a1', 'c3'], ['a3']],
+            [['b1', 'c2'], ['a1', 'c3'], ['c1']],
+            [['b3', 'c2'], ['a3', 'c1'], ['c3']],
+
+            [['a1', 'b2'], ['a3', 'c2'], ['a2']],
+            [['a1', 'b2'], ['b3', 'c1'], ['b1']],
+            [['c1', 'b2'], ['a2', 'c3'], ['c2']],
+            [['c1', 'b2'], ['b1', 'b3'], ['b1']],
+            [['c3', 'b2'], ['a3', 'b1'], ['b3']],
+            [['c3', 'b2'], ['a2', 'c1'], ['c2']],
+            [['a3', 'b2'], ['a1', 'c2'], ['a2']],
+            [['a3', 'b2'], ['b1', 'c3'], ['b3']],
+
+            [[], ['b2'], ['b2']]
+        ]
+
+        check = False
+
+        for combination in unbeatable_combinations:
+            for slot in combination[0]:
+                if self.board.board[slot] == symbol:
+                    check = True
+                else:
+                    check = False
+                    break
+            
+            for slot in combination[1]:
+                if self.board.board[slot] == '•':
+                    check = True
+                else:
+                    check = False
+                    break
+            
+            if check:
+                 for move in combination[2]:
+                    if move in possible_moves:
+                        return move
+            
+            

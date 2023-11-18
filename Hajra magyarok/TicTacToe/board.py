@@ -1,11 +1,6 @@
 class Board:
-    def __init__(self):
-        self.board = []
-        self.get_empty_board()
-
-
-    def get_empty_board(self):
-        self.board = {'a1':'•', 'a2':'•', 'a3':'•', 'b1':'•', 'b2':'•', 'b3':'•', 'c1':'•', 'c2':'•', 'c3':'•'}
+    def __init__(self, mask=['•','•','•','•','•','•','•','•','•']):
+        self.board = {'a1':mask[0], 'a2':mask[1], 'a3':mask[2], 'b1':mask[3], 'b2':mask[4], 'b3':mask[5], 'c1':mask[6], 'c2':mask[7], 'c3':mask[8]}
 
     def display_board(self):
         print('\n')

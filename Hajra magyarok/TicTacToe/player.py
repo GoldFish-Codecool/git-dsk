@@ -4,5 +4,3 @@ class Player:
         self.symbol = symbol
         self.AI = AI
     
-    def __repr__(self):
-        return self.name
