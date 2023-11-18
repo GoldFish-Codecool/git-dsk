@@ -34,12 +34,12 @@ class Area3(Area):
 
 class Area4(Area):
     intro = "Welcome to Area 1 - enter all description text"
-    if self.alcohol >= 2:
-        choices_drunk = ["Choice 1", "Choice 2", "Choice 3"]
-        outros_drunk = ["Outro 1", "Outro 2 - enter outro text corresponding to Choice 2", "Outro 3"]
-        attribute_updates = [{"health": -1, "alcohol": 1, "chairman": 0}, {"health": 0, "alcohol": 0, "chairman": -1}, {"health": 0, "alcohol": 0, "chairman": -1}]
-    else:
-        choices = ["Choice 1", "Choice 2", "Choice 3"]
-        outros = ["Outro 1", "Outro 2 - enter outro text corresponding to Choice 2", "Outro 3"]
-        attribute_updates = [{"health": -1, "alcohol": 1, "chairman": 0}, {"health": 0, "alcohol": 0, "chairman": -1}, {"health": 0, "alcohol": 0, "chairman": -1}]
+    #if self.alcohol >= 2:
+        #choices_drunk = ["Choice 1", "Choice 2", "Choice 3"]
+        #outros_drunk = ["Outro 1", "Outro 2 - enter outro text corresponding to Choice 2", "Outro 3"]
+        #attribute_updates = [{"health": -1, "alcohol": 1, "chairman": 0}, {"health": 0, "alcohol": 0, "chairman": -1}, {"health": 0, "alcohol": 0, "chairman": -1}]
+    #else:
+        #choices = ["Choice 1", "Choice 2", "Choice 3"]
+        #outros = ["Outro 1", "Outro 2 - enter outro text corresponding to Choice 2", "Outro 3"]
+        #attribute_updates = [{"health": -1, "alcohol": 1, "chairman": 0}, {"health": 0, "alcohol": 0, "chairman": -1}, {"health": 0, "alcohol": 0, "chairman": -1}]
     #next_area = Area4
