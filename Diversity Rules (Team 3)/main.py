@@ -82,10 +82,15 @@ while True: # should be while not_game-over condition
     #player1.location = new_area
 
     import sys
-    user_input = input("Do you want to quit the game? (y/n): ")
-    if user_input_lower() == "y":
-        exit_program()
-    #else:
-    #player1.location = new_area
-        
     
+    user_input = input("Do you want to quit the game? (y/n): ")
+    if user_input_lower () == "y":
+        exit_program()
+    
+    def exit_program():
+    print("Exiting the program...")
+    sys.exit(0)
+    
+    else:
+    player1.location = new_area
+        
