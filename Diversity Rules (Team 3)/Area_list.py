@@ -96,7 +96,7 @@ Area7.outros = ["\nNothing happens... you were never even paying attention...\n"
                 "\nThe Chairman hears you shouting and cheering - he seems happy to have a new fan in the club. \n",
                 "\nWell, this was not one of the best ideas. Not only you hurt yourself jumping down the stairs, you also drew a lot of police attention, who were already nervous due to the riots. They don't give you any chance to explain: you are taken to JAIL."]
 Area7.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": -1}, {"health": 0, "alcohol": 1, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": -3}, {"health": 0, "alcohol": 0, "chairman": 3}, {"health": 0, "alcohol": 0, "chairman": -100}]
-Area7.next_area = [8,8,8,8,8,8]
+Area7.next_area = [8,8,8,8,8,23]
 
 #Second goal (Bulgaria)
 Area8 = Area(8)
@@ -114,7 +114,7 @@ Area8.outros = ["\nNothing happens... you were never even paying attention...\n"
                 "\nThe Chairman hears you booing - he seems happy to have a new fan in the club. \n",
                 "\nWell, this was not one of the best ideas. Not only you hurt yourself jumping down the stairs, you also drew a lot of police attention, who were already nervous due to the riots. They don't give you any chance to explain: you are taken to JAIL."]
 Area8.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": -1}, {"health": 0, "alcohol": 1, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": -3}, {"health": 0, "alcohol": 0, "chairman": 3}, {"health": 0, "alcohol": 0, "chairman": -100}]
-Area8.next_area = [9,9,9,9,9,9]
+Area8.next_area = [9,9,9,9,9,23]
 
 #Half-time break
 Area9 = Area(9)
@@ -188,7 +188,7 @@ Area13.outros = ["\nNothing happens... you were never even paying attention...\n
                 "\nThe Chairman hears you booing - he seems happy to have a new fan in the club. \n",
                 "\nWell, this was not one of the best ideas. Not only you hurt yourself jumping down the stairs, you also drew a lot of police attention, who were already nervous due to the riots. They don't give you any chance to explain: you are taken to JAIL."]
 Area13.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": -1}, {"health": 0, "alcohol": 1, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": -3}, {"health": 0, "alcohol": 0, "chairman": 3}, {"health": 0, "alcohol": 0, "chairman": -100}]
-Area13.next_area = [14,14,14,14,14,14]
+Area13.next_area = [14,14,14,14,14,23]
 
 #Fourth goal (Hungary)
 Area14 = Area(14)
@@ -206,7 +206,7 @@ Area14.outros = ["\nNothing happens... you were never even paying attention...\n
                 "\nThe Chairman hears you shouting and cheering - he seems happy to have a new fan in the club. \n",
                 "\nWell, this was not one of the best ideas. Not only you hurt yourself jumping down the stairs, you also drew a lot of police attention, who were already nervous due to the riots. They don't give you any chance to explain: you are taken to JAIL."]
 Area14.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": -1}, {"health": 0, "alcohol": 1, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": -3}, {"health": 0, "alcohol": 0, "chairman": 3}, {"health": 0, "alcohol": 0, "chairman": -100}]
-Area14.next_area = [15,15,15,15,15,15]
+Area14.next_area = [15,15,15,15,15,23]
 
 #End of the game
 Area15 = Area(15)
@@ -267,7 +267,7 @@ Area19.outros = ["\nYou meet the rioters for a short second. In order to avoid a
                 "\nYou walked a bit longer than needed maybe - you will never know. You get home safe. \n" 
                 ]
 Area19.attribute_updates = [{"health": -1, "alcohol": 0, "chairman": 0}, {"health": 0, "alcohol": 0, "chairman": 0}]
-Area19.next_area = ["END GAME"]
+Area19.next_area = [22, 22]
 
 Area20 = Area(20)
 Area20.intro = "\nAs you onboard the bus, you notice people looking at you with a strange face, wondering if you are Hungarian or Bulgarian? \n"
@@ -278,7 +278,7 @@ Area20.outros = ["\nThey explain you that this bus is for Hungarians heading to 
                 "\nThey explain you that this bus is for Hungarians heading to the airport only. They drop you off at Eagle's bridge, where you fall out of the bus in embarrasment, hurting your knee. \n"
                 ]
 Area20.attribute_updates = [{"health": -1, "alcohol": 0, "chairman": -3}, {"health": -1, "alcohol": 0, "chairman": -5}]
-Area20.next_area = ["END GAME"]
+Area20.next_area = [22,22]
 
 Area21 = Area(21)
 Area21.intro = "\nThe fans rooted for Bulgaria, so they are drinking in dissappointment. You might also see a few familiar faces, you met earlier tonight as well? Nonetheless, they welcome you with open arms, offering you a drink. \n"
@@ -289,7 +289,7 @@ Area21.outros = ["\nOne beer follows the next and next and next ones... you get 
                 "\nThe fans are not happy that you do not join them, especially after they learn you also do not wish to riot further with them. They punch you in the stomach - after which you quickly rush home to safety. \n"
                 ]
 Area21.attribute_updates = [{"health": 0, "alcohol": 100, "chairman": 0}, {"health": -1, "alcohol": 0, "chairman": 0}]
-Area21.next_area = ["END GAME"]
+Area21.next_area = [23,22]
 
 #END GAME
 Area22 = Area(22)
@@ -298,6 +298,13 @@ Area22.choices = ["WE HOPED YOU ENJOYED THE GAME"]
 Area22.outros = ["SEE YOU NEXT TIME!"]
 Area22.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
 
-area_list = [Area1, Area2, Area3, Area4, Area5, Area6, Area7, Area8, Area9, Area10, Area11, Area12, Area13, Area14, Area15, Area16, Area17, Area18, Area19, Area20, Area21, Area22]
+#JAIL
+Area23 = Area(23)
+Area23.intro = "\nGAME OVER - YOU WERE TAKEN TO JAIL \n"
+Area23.choices = ["WE HOPED YOU ENJOYED THE GAME"]
+Area23.outros = ["SEE YOU NEXT TIME!"]
+Area23.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 0}]
+
+area_list = [Area1, Area2, Area3, Area4, Area5, Area6, Area7, Area8, Area9, Area10, Area11, Area12, Area13, Area14, Area15, Area16, Area17, Area18, Area19, Area20, Area21, Area22, Area23]
 # to switch between areas: this can be imported into the main.py and use area_list as a normal variable with list indexing
 

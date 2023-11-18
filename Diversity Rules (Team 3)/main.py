@@ -79,6 +79,8 @@ while True: # should be while not_game-over condition
     elif player1.chairman < -4:
         print(f"Game over. Your favour with the Chairman reached {player1.chairman}. Chairman had enough of you. You are fired.")
         break
+    elif player1.location == 23:
+        print("GAME OVER - YOU WERE TAKEN TO JAIL")
     elif player1.location == 22 and player1.chairman > 4:
         print(f"You are home safely. The next day you get a letter from the Chairman - you are promoted.")
         break
