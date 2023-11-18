@@ -1,7 +1,6 @@
+import sys
 from area import *
-
 from Area_list import *
-
 from player import *
 
 # player to know which is the location
@@ -46,7 +45,8 @@ def get_user_choice():
             print(choices[user_input])
             print(outros[user_input])
             return next_area[user_input]-1
-         
+        elif user_input.lower() == "quit":
+            sys.exit(0)
         else:
             print("Invalid choice. Please try again.")
 
@@ -78,17 +78,21 @@ while True: # should be while not_game-over condition
     elif player1.chairman < -4:
         print(f"Game over. Your favour with the Chairman reached {player1.chairman}. Chairman had enough of you. You are fired.")
         break
-    #else:
-    #player1.location = new_area
-
-    import sys
+    elif player1.location == 21 and player1.chairman > 4:
+        print(f"You are home safely. The next day you get a letter from the Chairman - you are promoted.")
+        break
+    elif player1.location == 21:
+        print(f"You win. You are home safely.")
+        break
+    else:
+        player1.location = new_area
+       
+    #user_input = input("Do you want to quit the game? (y/n): ")
+    #if user_input == "y":
+    #    sys.exit(0)
     
-    user_input = input("Do you want to quit the game? (y/n): ")
-    if user_input_lower () == "y":
-        exit_program()
-    
-    def exit_program():
-     sys.exit(0)
+    #def exit_program():
+    # sys.exit(0)
     
     #else:
     #player1.location = new_area
