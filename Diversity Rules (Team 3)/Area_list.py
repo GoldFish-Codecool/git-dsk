@@ -1,8 +1,8 @@
 from area import area
 
 Area1 = area(1)
-Area1.intro = ""
-Area1.choices = []
+Area1.intro = "Welcome to the Hyatt Hotel. Now you should choose a way how to reach the stadium?"
+Area1.choices = [By walk, ]
 Area1.outros = []
 Area1.attribute_updates = []
 Area1.next_area = [] #reachable area ID
