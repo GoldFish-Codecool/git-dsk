@@ -12,12 +12,25 @@ from player import *
 print("\n\nWELCOME TO THE BEST GAME YOU EVER PLAYED!")
 print("HAVE FUN!")
 print("---")
-print ("\nThe Wheel of fortune… You are thinking of the next OC and your and your direct reports’ OKRs completion status, while you do the last cross-check of your smart casual appearance in front of the mirror. After a long sight, you refocus your attention to less pressing matters: the football match tonight between Bulgaria and Hungary. Who will win tonight? Who should you be cheering for? Do you even care? How should you behave? Who will you be talking to? You leave to Hyatt to meet everyone at 18:45 sharp, knowing that from this point on you have full control over how the events of tonight unfold – but you will also need to own the consequences, let them be personal or professional...") 
+print ("\n\nThe Wheel of fortune… You are thinking of the next OC and your and your direct reports’ OKRs completion status, while you do the last cross-check of your smart casual appearance in front of the mirror. After a long sight, you refocus your attention to less pressing matters: the football match tonight between Bulgaria and Hungary. Who will win tonight? Who should you be cheering for? Do you even care? How should you behave? Who will you be talking to? You leave to Hyatt to meet everyone at 18:45 sharp, knowing that from this point on you have full control over how the events of tonight unfold – but you will also need to own the consequences, let them be personal or professional...") 
 
-player_name = input("Enter your name: ")
+player_name = input("\nEnter your name: ")
+
+    
 player1 = Player(player_name)
-print(f"Welcome {player_name} ")
-print(f"Your health is {player1.health} ")
+
+player_difficulty = int(input("\nEnter difficulty 1-easy 2-medium 3-hard :"))
+if player_difficulty == 1:
+    player1.update_chairman (5)
+elif player_difficulty == 2:
+    player1.update_chairman (2)
+elif player_difficulty == 3:
+    player1.update_chairman (0)
+else:
+    print ("Invalid choice")
+    
+print(f"\nWelcome {player_name} ")
+print(f"\nYour health is {player1.health} ")
 print(f"Your alcohol level is {player1.alcohol} ")
 print(f"Your favor with the Chairman is {player1.chairman} ")
 #player1.update_health(-1)
