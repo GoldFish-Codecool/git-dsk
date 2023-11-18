@@ -171,6 +171,42 @@ Area12.outros = ["\nHe nods in silence, acknowledging your answer. You are relie
 Area12.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": 5}, {"health": 0, "alcohol": 0, "chairman": -5}, {"health": 0, "alcohol": 0, "chairman": -5}, {"health": 0, "alcohol": 0, "chairman": -5}]
 Area12.next_area = [13,13,13,13]
 
+#3rd goal for Bulgaria
+Area13 = Area(13)
+Area13.intro = "\nThe Bulgarian team scored a goal! This is not so amazing - Bulgaria is in the lead. Maybe not all hope is lost though... there is still some time left. \n"
+Area13.choices = ["\nYou are impartial - did not even notice that the goal happened. You continue playing with your phone.\n",
+                "\nYou are sad... And what better way to cheer up the mood, then to take a shot with some other sad fans. It is always a great networking opportinity to be with people close to the Chairman!!! Cheers! \n", 
+                "\nYou (maybe fake?) boo with everyone else for the success of the Bulgarian team - even if you do not care deep-down about the results. \n", 
+                "\nYou let out a slight cheer in a happy voice. \n", 
+                "\nYou start booing very loud and then join the encouraging Ria-Ria-Hungaria chants of the Hungarian fans - the stadium is empty but you are here to ensure there is some mood, right? \n",
+                "\nYou are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way. Let's make this event fun!!! "]
+Area13.outros = ["\nNothing happens... you were never even paying attention...\n",
+                "\nYou shiver a bit from the shot but you are satisfied. You continue watching the game with your new friends for a while, before going back to your colleagues. \n", 
+                "\nThe Chairman hears you booing - even if the results are not great, he seems happy to have such a committed fan in the club. \n", 
+                "\nThe Charman notices your reaction - he understands you might be from non-Hungarian nationality: but you are part of OTP Group, remember? \n", 
+                "\nThe Chairman hears you booing - he seems happy to have a new fan in the club. \n",
+                "\nWell, this was not one of the best ideas. Not only you hurt yourself jumping down the stairs, you also drew a lot of police attention, who were already nervous due to the riots. They don't give you any chance to explain: you are taken to JAIL."]
+Area13.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": -1}, {"health": 0, "alcohol": 1, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": -3}, {"health": 0, "alcohol": 0, "chairman": 3}, {"health": 0, "alcohol": 0, "chairman": -100}]
+Area13.next_area = [14,14,14,14,14,14]
+
+#Fourth goal (Hungary)
+Area14 = Area(14)
+Area14.intro = "\nThe Hungarian team scored its second goal just last minute! This is amazing - you should be happy, regardless of nationality - rights? A tie is definitely better than a loss! \n"
+Area14.choices = ["\nYou are impartial - did not even notice that the goal happened. You continue playing with your phone, waiting to go home.\n",
+                "\nYou decide to celebrate this event! And what better tool to do so, then to take a shot with some other happy fans, when they approach you? It is a great networking opportinity to be with people close to the Chairman!!! Cheers! \n", 
+                "\nYou (maybe fake?) cheer with everyone else for the success of the Hungarian team - even if you do not care deep-down about the results. \n", 
+                "\nThe Bulgarians just received a goal… you let out a slight boo and dissappointed voice. \n", 
+                "\nYou start cheering very loud - the stadium is empty but you are here to ensure there is some mood, right? \n",
+                "\nYou are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way. Let's make this event fun!!! "]
+Area14.outros = ["\nNothing happens... you were never even paying attention...\n",
+                "\nYou shiver a bit from the shot but you are satisfied. You continue watching the game with your new friends for a while, before going back to your colleagues. \n", 
+                "\nThe Chairman hears you shouting and cheering - he seems happy to have a new fan in the club. \n", 
+                "\nThe Charman notices your reaction and lack of cheering: you are part of OTP Group, remember? \n", 
+                "\nThe Chairman hears you shouting and cheering - he seems happy to have a new fan in the club. \n",
+                "\nWell, this was not one of the best ideas. Not only you hurt yourself jumping down the stairs, you also drew a lot of police attention, who were already nervous due to the riots. They don't give you any chance to explain: you are taken to JAIL."]
+Area14.attribute_updates = [{"health": 0, "alcohol": 0, "chairman": -1}, {"health": 0, "alcohol": 1, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": 1}, {"health": 0, "alcohol": 0, "chairman": -3}, {"health": 0, "alcohol": 0, "chairman": 3}, {"health": 0, "alcohol": 0, "chairman": -100}]
+Area14.next_area = [15,15,15,15,15,15]
+
 Area2 = Area(2)
 Area2.intro = "\n \n"
 Area2.choices = ["\n \n", 
@@ -318,3 +354,4 @@ Area2.next_area = [6,7,8,9]
 
 area_list = [Area1, Area2, Area3, Area4]
 # to switch between areas: this can be imported into the main.py and use area_list as a normal variable with list indexing
+
