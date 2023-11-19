@@ -17,10 +17,10 @@ Area1.next_area = [2,6,3,5]
 Area2 = Area(2)
 Area2.intro = "\nWALK TO THE STADIUM\nThe protesters smile at you, however, probably they are here to join the riot. One of them addresses you directly, while the rest sorround you in a circle. After a few nice sentences, he pulls out a can of Kamenitsa from under his black leather jacket and hands it over to you. \n"
 Area2.choices = ["\n 🍺 You decide to take the beer. Anyway you have time, the others are just about to depart - you are also unsure what would happen if you reject? \n", 
-                "\nYou are not here to talk to some football rioters. You reject the beer and try to move forward. \n"
+                "\n ❌ You are not here to talk to some football rioters. You reject the beer and try to move forward. \n"
                 ]
-Area2.outros = ["\nYou open the can of beer and say cheers to all the rioters. They are smiling, and you are having fun. You discuss the Bulgarian and Hungarian political situation. Who thought they are a fan of Orban as well? You arrive just on time, as the others arrive as well.  \n", 
-               "\nTheir faces darken, as you reject the beer. You see the person putting the beer away. - So, you think you are too fancy for us? How nice. Let us teach you the other way! Before you could react, he punches you in the stomach. Humiliated, you rush towards the stadium. \n" 
+Area2.outros = ["\n 🍺 You open the can of beer and say cheers to all the rioters. They are smiling, and you are having fun. You discuss the Bulgarian and Hungarian political situation. Who thought they are a fan of Orban as well? You arrive just on time, as the others arrive as well.  \n", 
+               "\n 🤕 Their faces darken, as you reject the beer. You see the person putting the beer away. - So, you think you are too fancy for us? How nice. Let us teach you the other way! Before you could react, he punches you in the stomach. Humiliated, you rush towards the stadium. \n" 
                ]
 Area2.attribute_updates = [{"health": 0, "alcohol": 1, "chairman": 0}, {"health": -1, "alcohol": 0, "chairman": 0}]
 Area2.next_area = [6,6]
@@ -28,12 +28,12 @@ Area2.next_area = [6,6]
 #Bulletproof bus
 Area3 = Area(3)
 Area3.intro = "\nAT BULLETPROOF BUS\nAs you enter the bus from the front, you immediately notice that it is empty. The front is fully lighted, while the back of the bus is dark. Clearly, noone wants anyone to sit back there. The driver invites you to sit down - but where? \n"
-Area3.choices = ["\nYou decide to sit in the front - anyway that it the only place where there is light. You prefer the window, maybe you can also see some policemen and protesters fighting on the way… \n", 
-                "\nOr, as you think further - maybe the bus is not bulletproof - it would be safer to sit close to the corridor. \n", 
-                "\nOr, maybe, there are also others coming with this bus? You go to the back of the bus, trying to dissappear in the pitch black area. \n"
+Area3.choices = ["\n 💺 You decide to sit in the front - anyway that it the only place where there is light. You prefer the window, maybe you can also see some policemen and protesters fighting on the way… \n", 
+                "\n 💺 Or, as you think further - maybe the bus is not bulletproof - it would be safer to sit close to the corridor. \n", 
+                "\n 🪑 Or, maybe, there are also others coming with this bus? You go to the back of the bus, trying to dissappear in the pitch black area. \n"
                 ]
 Area3.outros = ["\nAs you settle to your chair, the Chairman arrives. He looks at you with a questionmark on his face - you are sitting at his place! He looks back behind his back. Security arrives, and ask you to leave the bus. You also fell in embarassment on your way to the other bus.\n", 
-                "\nAs you settle to your chair, the Chairman arrives. He looks at you with a questionmark on his face and then proceeds to sit next to you.\n"
+                "\nAs you settle to your chair, the Chairman arrives. He looks at you with a questionmark on his face and then proceeds to sit next to you.\n",
                 "\nYou notice the Chairman arriving. As it is dark, he almost did not even recognize you are there. He looks at you with a dissappointed look but otherwise - you dodged a bullet. \n"
                 ]
 Area3.attribute_updates = [{"health": -1, "alcohol": 0, "chairman": -5}, {"health": 0, "alcohol": 0, "chairman": -3}, {"health": -1, "alcohol": 0, "chairman": -1}]
@@ -41,7 +41,7 @@ Area3.next_area = [6,4,6]
 
 #QnA with Chairman on the bus
 Area4 = Area(4)
-Area4.intro = "\nQNA WITH THE CHAIRMAN\nFollowing a quick introduction with the Chairman, now is your time to shine! 10 uninterrupted minutes with one of the most influential Hungarians??? \n\nAs you start talking, the discussion quickly shifts towards football and the Hungarian's performance and history. The Chairman looks at you with a serious face and asks you: \nWho passed the ball to Ádám Szalai, who then scored Hungary's first Euro2016 goal against Austria? \n"
+Area4.intro = "\n ❓ QNA WITH THE CHAIRMAN\nFollowing a quick introduction with the Chairman, now is your time to shine! 10 uninterrupted minutes with one of the most influential Hungarians??? \n\nAs you start talking, the discussion quickly shifts towards football and the Hungarian's performance and history. The Chairman looks at you with a serious face and asks you: \nWho passed the ball to Ádám Szalai, who then scored Hungary's first Euro2016 goal against Austria? \n"
 Area4.choices = ["\nLászló Kleinheisler \n", 
                 "\nBalázs Dzsudzsák \n", 
                 "\nZoltán Gera \n", 
@@ -56,8 +56,8 @@ Area4.next_area = [6,6,6]
 #Drive with the Mercedes
 Area5 = Area(5)
 Area5.intro = "\nDRIVE WITH THE MERCEDES\nYou notice there is very fancy champagne and caviar on ice platter offered in the car. The driver looks back at you, encouraging you to enjoy those items.\n"
-Area5.choices = ["\nYou decide to try the champagne and the caviar - they look really fancy and appetizing! \n", 
-                "\nYou reject the champagne and the caviar, to the visible dismay of the driver. \n"
+Area5.choices = ["\n 🍷 You decide to try the champagne and the caviar - they look really fancy and appetizing! \n", 
+                "\n ❌ You reject the champagne and the caviar, to the visible dismay of the driver. \n"
                 ]
 Area5.outros = ["\nAs you exit the car, the others also just arrive, including the Chairman. He looks at you with a non-pleasant look, and you notice him whispering something to the person standing next to him. \n", 
                 "\nAs you exit the car, the others also just arrive, including the Chairman. He looks at you with a non-pleasant look, and you notice him whispering something to the person standing next to him. \n"
@@ -68,10 +68,10 @@ Area5.next_area = [6,6]
 #Sitting down in the stadium
 Area6 = Area(6)
 Area6.intro = "\nSITTING IN STADIUM\nYou enter the stadium and arrive to the Hungarian VIP lounge. After a while, you are rushed to sit down in the stadium to experience the match, so you head outside to the cold. \nYou remember your allocated seat - row 1, seat 1. However, both the stadium and the VIP section are empty. There is plenty of space! You see some DSK colleagues head to sit also in the middle in a different row. \n"
-Area6.choices = ["\nRegardless, you decide to go to your assigned space alone. Better safe than sorry! \n", 
-                "\nYou join some of the DSK colleagues who headed to sit in the middle - you are here to see the match and you prefer to enjoy it in nice company. \n", 
-                "\nYou notice there are some leather chairs in the middle - they seem more comfortable than any other option, and noone is around securing the space or trying to sit there. Comfort first, the cold is enough to tolerate! \n", 
-                "\nIt is cold. Maybe it is better to go back and enjoy the match from the warmth of the VIP lounge? For sure, some other people must have stayed there as well! \n"
+Area6.choices = ["\n 🪑 Regardless, you decide to go to your assigned space alone. Better safe than sorry! \n", 
+                "\n 🪑 You join some of the DSK colleagues who headed to sit in the middle - you are here to see the match and you prefer to enjoy it in nice company. \n", 
+                "\n 💺 You notice there are some leather chairs in the middle - they seem more comfortable than any other option, and noone is around securing the space or trying to sit there. Comfort first, the cold is enough to tolerate! \n", 
+                "\n 🍷 It is cold. Maybe it is better to go back and enjoy the match from the warmth of the VIP lounge? For sure, some other people must have stayed there as well! \n"
                 ]
 Area6.outros = ["\nSome other rule-abiding colleagues from DSK also arrive! You smile - this match will be fun! \n", 
                 "\nAs you settle down, you notice the Chairman and some Bulgarian football association people approaching. They sit down in the leather chairs in front of you. You start to smile - you will be in TV probably! Though, maybe the Chairman wanted someone else to sit there? You will never know... \n", 
