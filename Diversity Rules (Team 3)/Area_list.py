@@ -82,12 +82,12 @@ Area6.next_area = [7,7,7,7]
 
 #First goal (Hungary)
 Area7 = Area(7)
-Area7.intro = "\nFIRST HUNGARIAN GOAL\nThe Hungarian team scored the 1st goal! This is amazing - you should be happy, regardless of nationality - rights? \n"
-Area7.choices = ["\nYou are impartial - did not even notice that the goal happened. You continue playing with your phone.\n",
-                "\nYou decide to celebrate this event! You take a shot with some other happy fans, when they approach you. Cheers! \n", 
-                "\nYou cheer with everyone else for the success of the Hungarian team. \n", 
-                "\nYou let out a slight boo in a dissappointed voice. \n", 
-                "\nYou start cheering very loud - the stadium is empty but you are here to ensure there is some mood, right? \n",
+Area7.intro = "\n ⚽ FIRST HUNGARIAN GOAL\nThe Hungarian team scored the 1st goal! This is amazing - you should be happy, regardless of nationality - rights? \n"
+Area7.choices = ["\n 📱 You are impartial - did not even notice that the goal happened. You continue playing with your phone.\n",
+                "\n 🍺 You decide to celebrate this event! You take a shot with some other happy fans, when they approach you. Cheers! \n", 
+                "\n 🙋 You cheer with everyone else for the success of the Hungarian team. \n", 
+                "\n 😥 You let out a slight boo in a dissappointed voice. \n", 
+                "\n 🗣️ You start cheering very loud - the stadium is empty but you are here to ensure there is some mood, right? \n",
                 "\nYou are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way!!! "]
 Area7.outros = ["\nNothing happens... you were never even paying attention... Maybe someone noticed your lack of enthusiasm?\n",
                 "\nYou shiver a bit from the shot but you are satisfied. After a few minutes, you go back to your colleagues. \n", 
@@ -100,12 +100,12 @@ Area7.next_area = [8,8,8,8,8,23]
 
 #Second goal (Bulgaria)
 Area8 = Area(8)
-Area8.intro = "\nFIRST BULGARIAN GOAL\nThe Bulgarian team scored a goal! This is not so amazing - but a tie is still fine for Hungary, so it not all hope is lost. \n"
-Area8.choices = ["\nYou are impartial - did not even notice that the goal happened. You continue playing with your phone.\n",
-                "\nYou decide to cheer up your mood with some alcohol. Cheers! \n", 
-                "\nYou chant with everyone else to energize the Hungarian team. \n", 
-                "\nYou let out a quiet cheer in a happy voice. \n", 
-                "\nYou start chanting very loud RIA-RIA-HUNGARIA - the stadium is empty but you are here to ensure there is some mood, right? \n",
+Area8.intro = "\n ⚽ FIRST BULGARIAN GOAL\nThe Bulgarian team scored a goal! This is not so amazing - but a tie is still fine for Hungary, so it not all hope is lost. \n"
+Area8.choices = ["\n 📱 You are impartial - did not even notice that the goal happened. You continue playing with your phone.\n",
+                "\n 🍺 You decide to cheer up your mood with some alcohol. Cheers! \n", 
+                "\n 🙋 You chant with everyone else to energize the Hungarian team. \n", 
+                "\n 😥 You let out a quiet cheer in a happy voice. \n", 
+                "\n 🗣️ You start chanting very loud RIA-RIA-HUNGARIA - the stadium is empty but you are here to ensure there is some mood, right? \n",
                 "\nYou are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way!!! "]
 Area8.outros = ["\nNothing happens... you were never even paying attention...\n",
                 "\nYou shiver a bit from the shot but you are satisfied. \n", 
@@ -119,7 +119,7 @@ Area8.next_area = [9,9,9,9,9,23]
 #Half-time break
 Area9 = Area(9)
 Area9.intro = "\nHALF-TIME BREAK\nThe first half of the game is over. One more half to go. You head to the Hungarian VIP lounge with everyone else, with some chit-chats along the way. Once you arrive to the VIP zone, you look around, wondering what to do? \n"
-Area9.choices = ["\nHave a drink - the ones they serve seem to be really fancy! \n", 
+Area9.choices = ["\n 🍺 Have a drink - the ones they serve seem to be really fancy! \n", 
                 "\nYou decide to socialize with some people. You are here to network and build relations, if possible. \n", 
                 "\nGo back to the stadium - you have some emails to read - and anyway, you are not in the mood to chitchat during such a short break. \n" 
                 ]
@@ -133,7 +133,7 @@ Area9.next_area = [13,10,13]
 #With who to socialize with?
 Area10 = Area(10)
 Area10.intro = "\nSOCIALIZE\nYou see many people engaged in conversations already, some closer to the bar, some more further away. \n"
-Area10.choices = ["\nYou decide to stay with your colleagues - better safe than sorry! \n", 
+Area10.choices = ["\n 📱 You decide to stay with your colleagues - better safe than sorry! \n", 
                  "\nYou see an opportunity to talk with some Supervisory board members - this is your chance! You advance towards them. \n", 
                  "\nYou notice the Chairman - to everyone's surpise is standing alone. Can you maybe make a perfect impression now during the break? \n"
                  ]
@@ -174,12 +174,12 @@ Area12.next_area = [13,13,13,13]
 
 #3rd goal for Bulgaria
 Area13 = Area(13)
-Area13.intro = "\nSECOND BULGARIAN GOAL\nThe Bulgarian team scored a goal! This is not so amazing - Bulgaria is in the lead. Maybe not all hope is lost though... there is still some time left. \n"
-Area13.choices = ["\nYou are impartial - did not even notice that the goal happened. You continue playing with your phone.\n",
-                "\nYou decide to cheer up your mood with some alcohol. Cheers! \n", 
-                "\nYou chant with everyone else to energize the Hungarian team. \n", 
-                "\nYou let out a quiet cheer in a happy voice. \n", 
-                "\nYou start chanting very loud RIA-RIA-HUNGARIA - the stadium is empty but you are here to ensure there is some mood, right? \n",
+Area13.intro = "\n ⚽ SECOND BULGARIAN GOAL\nThe Bulgarian team scored a goal! This is not so amazing - Bulgaria is in the lead. Maybe not all hope is lost though... there is still some time left. \n"
+Area13.choices = ["\n 📱 You are impartial - did not even notice that the goal happened. You continue playing with your phone.\n",
+                "\n 🍺 You decide to cheer up your mood with some alcohol. Cheers! \n", 
+                "\n 🙋 You chant with everyone else to energize the Hungarian team. \n", 
+                "\n 😥 You let out a quiet cheer in a happy voice. \n", 
+                "\n 🗣️ You start chanting very loud RIA-RIA-HUNGARIA - the stadium is empty but you are here to ensure there is some mood, right? \n",
                 "\nYou are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way!!! "]
 Area13.outros = ["\nNothing happens... you were never even paying attention...\n",
                 "\nYou shiver a bit from the shot but you are satisfied. \n", 
@@ -192,12 +192,12 @@ Area13.next_area = [14,14,14,14,14,23]
 
 #Fourth goal (Hungary)
 Area14 = Area(14)
-Area14.intro = "\nSECOND HUNGARIAN GOAL\nThe Hungarian team scored its second goal just last minute! This is amazing - you should be happy, regardless of nationality - rights? A tie is definitely better than a loss! \n"
-Area14.choices = ["\nYou are impartial - did not even notice that the goal happened. You continue playing with your phone.\n",
-                "\nYou decide to celebrate this event! You take a shot with some other happy fans, when they approach you. Cheers! \n", 
-                "\nYou cheer with everyone else for the success of the Hungarian team. \n", 
-                "\nYou let out a slight boo in a dissappointed voice. \n", 
-                "\nYou start cheering very loud - the stadium is empty but you are here to ensure there is some mood, right? \n",
+Area14.intro = "\n ⚽ SECOND HUNGARIAN GOAL\nThe Hungarian team scored its second goal just last minute! This is amazing - you should be happy, regardless of nationality - rights? A tie is definitely better than a loss! \n"
+Area14.choices = ["\n 📱 You are impartial - did not even notice that the goal happened. You continue playing with your phone.\n",
+                "\n 🍺 You decide to celebrate this event! You take a shot with some other happy fans, when they approach you. Cheers! \n", 
+                "\n 🙋 You cheer with everyone else for the success of the Hungarian team. \n", 
+                "\n 😥 You let out a slight boo in a dissappointed voice. \n", 
+                "\n 🗣️ You start cheering very loud - the stadium is empty but you are here to ensure there is some mood, right? \n",
                 "\nYou are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way!!! "]
 Area14.outros = ["\nNothing happens... you were never even paying attention... Maybe someone noticed your lack of enthusiasm?\n",
                 "\nYou shiver a bit from the shot but you are satisfied. After a few minutes, you go back to your colleagues. \n", 
