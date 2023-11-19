@@ -41,4 +41,3 @@ if __name__ == "__main__":
             xoro= input("xoro: ")
             add_winner(winner, opponent, xoro)
             break
-conn.close()

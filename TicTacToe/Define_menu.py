@@ -1,4 +1,4 @@
-from leaderboardpeter import get_winners
+from leaderboardpeter import *
 from Leaderboard_summary import get_leaderboard
 
 def menu():
@@ -29,6 +29,7 @@ def menu():
 
         elif choice == "quit":
             print ("Sorry to see you go so soon. \n")
+            conn.close()
             exit() 
         else:
             print("\nInvalid choice, please enter a valid option.")

@@ -47,11 +47,13 @@ while True:
         opponent = player_B[0] if player_turn == player_A else player_A[0]
         xoro= player_turn[1]
         add_winner(winner, opponent, xoro)
+        conn.close()
         break
     
     if is_board_full(board):
         print_table(board)
         print("\nIt's a draw!")
+        conn.close()
         break
 
     if player_turn == player_A:

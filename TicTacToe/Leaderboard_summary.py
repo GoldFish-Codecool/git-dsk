@@ -13,5 +13,3 @@ def get_leaderboard() :
     tictactoe = cur.fetchall()
     for winner in tictactoe :
         print(winner)
-
-conn.close()
