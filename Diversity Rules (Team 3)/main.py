@@ -77,15 +77,15 @@ while True: # should be while not_game-over condition
     #print(player1.location, user_input, old_area)  
     health_update = area_list[player1.location].attribute_updates [user_input]["health"]
     player1.update_health(health_update)
-    print(f"Your health is {player1.health} ")
+    print(f" 🚑 Your health level is {player1.health} ")
 
     alcohol_update = area_list[player1.location].attribute_updates [user_input]["alcohol"]
     player1.update_alcohol(alcohol_update)
-    print(f"Your alcohol level is {player1.alcohol} ")
+    print(f" 🍺 Your alcohol level is {player1.alcohol} ")
 
     chairman_update = area_list[player1.location].attribute_updates [user_input]["chairman"]
     player1.update_chairman(chairman_update)
-    print(f"Your chairman points are {player1.chairman} ")
+    print(f" 🏦 Your favor with the chairman is {player1.chairman} ")
 
     if player1.health < 1:
         print(f"Game over. Your health reached {player1.health}. Your are in hospital.")
