@@ -7,8 +7,8 @@ from move import make_move
 from check_win import win
 from check_draw import is_board_full
 from computer_move import computer_move
-#from leaderboardpeter import *
-#from Leaderboard_summary import *
+from leaderboardpeter import *
+from Leaderboard_summary import *
 
 #option = menu()
 player_A, player_B = players_name_char()
