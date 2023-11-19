@@ -35,14 +35,14 @@ while True:
         row, col, interrupt_game = get_player_moves(board)
 
     if interrupt_game == True:
-        print("Sorry to see you go in the middle of a game")
+        print("\nSorry to see you go in the middle of a game")
         exit()
 
     make_move(board, row, col, player_turn[1])
 
     if win(board):
         print_table(board)
-        print(f"Player {player_turn[0]} wins!")
+        print(f"\nPlayer {player_turn[0]} wins!")
         winner = player_A[0] if player_turn == player_A else player_B[0]
         opponent = player_B[0] if player_turn == player_A else player_A[0]
         xoro= player_turn[1]
@@ -51,7 +51,7 @@ while True:
     
     if is_board_full(board):
         print_table(board)
-        print("It's a draw!")
+        print("\nIt's a draw!")
         break
 
     if player_turn == player_A:
