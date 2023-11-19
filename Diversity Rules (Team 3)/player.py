@@ -1,7 +1,7 @@
 class Player:
     def __init__(self, name):
         self.name = name
-        self.health = 3
+        self.health = 2
         self.alcohol = 0
         self.chairman = 0
         self.location = 0 #starts with 0, as that is the 1st location (0) #we need to update location too
