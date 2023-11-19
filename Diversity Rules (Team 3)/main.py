@@ -31,9 +31,9 @@ else:
     print ("Invalid choice")
     
 print(f"\nWelcome {player_name} ")
-print(f"\nYour health is {player1.health} ")
-print(f"Your alcohol level is {player1.alcohol} ")
-print(f"Your favor with the Chairman is {player1.chairman} ")
+print(f"\n 🚑 Your health is {player1.health} ")
+print(f" 🍺 Your alcohol level is {player1.alcohol} ")
+print(f" 🏦 Your favor with the Chairman is {player1.chairman} ")
 #player1.update_health(-1)
 #player1.update_alcohol(1)
 #player1.update_chairman(-1)
