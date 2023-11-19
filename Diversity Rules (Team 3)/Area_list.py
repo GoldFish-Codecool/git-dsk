@@ -88,7 +88,7 @@ Area7.choices = ["\n 📱 You are impartial - did not even notice that the goal 
                 "\n 🙋 You cheer with everyone else for the success of the Hungarian team. \n", 
                 "\n 😥 You let out a slight boo in a dissappointed voice. \n", 
                 "\n 🗣️ You start cheering very loud - the stadium is empty but you are here to ensure there is some mood, right? \n",
-                "\nYou are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way!!! "]
+                "\n 🏃‍♂️ You are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way!!! "]
 Area7.outros = ["\nNothing happens... you were never even paying attention... Maybe someone noticed your lack of enthusiasm?\n",
                 "\nYou shiver a bit from the shot but you are satisfied. After a few minutes, you go back to your colleagues. \n", 
                 "\nThe Chairman hears you shouting and cheering - he seems happy to have a new fan in the club. \n", 
@@ -106,7 +106,7 @@ Area8.choices = ["\n 📱 You are impartial - did not even notice that the goal 
                 "\n 🙋 You chant with everyone else to energize the Hungarian team. \n", 
                 "\n 😥 You let out a quiet cheer in a happy voice. \n", 
                 "\n 🗣️ You start chanting very loud RIA-RIA-HUNGARIA - the stadium is empty but you are here to ensure there is some mood, right? \n",
-                "\nYou are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way!!! "]
+                "\n 🏃‍♂️ You are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way!!! "]
 Area8.outros = ["\nNothing happens... you were never even paying attention...\n",
                 "\nYou shiver a bit from the shot but you are satisfied. \n", 
                 "\nThe Chairman hears you chanting - even if the results are not great, he seems happy to have such a committed fan in the club. \n", 
@@ -180,7 +180,7 @@ Area13.choices = ["\n 📱 You are impartial - did not even notice that the goal
                 "\n 🙋 You chant with everyone else to energize the Hungarian team. \n", 
                 "\n 😥 You let out a quiet cheer in a happy voice. \n", 
                 "\n 🗣️ You start chanting very loud RIA-RIA-HUNGARIA - the stadium is empty but you are here to ensure there is some mood, right? \n",
-                "\nYou are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way!!! "]
+                "\n 🏃‍♂️ You are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way!!! "]
 Area13.outros = ["\nNothing happens... you were never even paying attention...\n",
                 "\nYou shiver a bit from the shot but you are satisfied. \n", 
                 "\nThe Chairman hears you chanting - even if the results are not great, he seems happy to have such a committed fan in the club. \n", 
@@ -198,7 +198,7 @@ Area14.choices = ["\n 📱 You are impartial - did not even notice that the goal
                 "\n 🙋 You cheer with everyone else for the success of the Hungarian team. \n", 
                 "\n 😥 You let out a slight boo in a dissappointed voice. \n", 
                 "\n 🗣️ You start cheering very loud - the stadium is empty but you are here to ensure there is some mood, right? \n",
-                "\nYou are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way!!! "]
+                "\n 🏃‍♂️ You are so enthusiastic about this goal that you decide to run into the stadium - you even manage to steal a flag that you can wave along the way!!! "]
 Area14.outros = ["\nNothing happens... you were never even paying attention... Maybe someone noticed your lack of enthusiasm?\n",
                 "\nYou shiver a bit from the shot but you are satisfied. After a few minutes, you go back to your colleagues. \n", 
                 "\nThe Chairman hears you shouting and cheering - he seems happy to have a new fan in the club. \n", 
