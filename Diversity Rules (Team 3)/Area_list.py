@@ -16,7 +16,7 @@ Area1.next_area = [2,6,3,5]
 #Walking to the stadium
 Area2 = Area(2)
 Area2.intro = "\nWALK TO THE STADIUM\nThe protesters smile at you, however, probably they are here to join the riot. One of them addresses you directly, while the rest sorround you in a circle. After a few nice sentences, he pulls out a can of Kamenitsa from under his black leather jacket and hands it over to you. \n"
-Area2.choices = ["\nYou decide to take the beer. Anyway you have time, the others are just about to depart - you are also unsure what would happen if you reject? \n", 
+Area2.choices = ["\n 🍺You decide to take the beer. Anyway you have time, the others are just about to depart - you are also unsure what would happen if you reject? \n", 
                 "\nYou are not here to talk to some football rioters. You reject the beer and try to move forward. \n"
                 ]
 Area2.outros = ["\nYou open the can of beer and say cheers to all the rioters. They are smiling, and you are having fun. You discuss the Bulgarian and Hungarian political situation. Who thought they are a fan of Orban as well? You arrive just on time, as the others arrive as well.  \n", 
