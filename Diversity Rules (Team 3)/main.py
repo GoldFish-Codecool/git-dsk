@@ -88,22 +88,22 @@ while True: # should be while not_game-over condition
     print(f" 🏦 Your favor with the chairman is {player1.chairman} ")
 
     if player1.health < 1:
-        print(f"Game over. Your health reached {player1.health}. Your are in hospital.")
+        print(f" 🔚 Game over. Your health reached {player1.health}. Your are in hospital.")
         break
     elif player1.alcohol > 3:
-        print(f"Game over. Your alcohol level exceeds {player1.alcohol} promils. Your are drunk and in jail.")
+        print(f" 🔚 Game over. Your alcohol level exceeds {player1.alcohol} promils. Your are drunk and in jail.")
         break
     elif player1.chairman < -5:
-        print(f"Game over. Your favour with the Chairman reached {player1.chairman}. Chairman had enough of you. You are fired.")
+        print(f"🔚 Game over. Your favour with the Chairman reached {player1.chairman}. Chairman had enough of you. You are fired.")
         break
     elif player1.location == 22:
-        print("GAME OVER - YOU WERE TAKEN TO JAIL")
+        print(" 🔚 GAME OVER - YOU WERE TAKEN TO JAIL")
         break
     elif player1.location == 21 and player1.chairman > 6:
-        print(f"You are home safely. The next day you get a letter from the Chairman - you are promoted.")
+        print(f" 🏆 You are home safely. The next day you get a letter from the Chairman - you are promoted.")
         break
     elif player1.location == 21:
-        print(f"You win. You are home safely.")
+        print(f" 🏆 You win. You are home safely.")
         break
     
     player1.location = new_area  
