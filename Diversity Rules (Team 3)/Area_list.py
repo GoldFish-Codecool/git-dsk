@@ -2,10 +2,10 @@ from area import *
 
 Area1 = Area(1)
 Area1.intro = "\nAT HYATT\nYou go around Hyatt, talking to the people you know. Time flies fast - however, you do not notice and decide to take a quick break to \"powder your nose\". However, by the time you are finished, you cannot find anyone and your phone has no reception. You cannot miss this football match!\nWhat do you do?\n"
-Area1.choices = ["\nYou decide to walk to the stadium and figure out from there. Should not take more than 10 minutes, so you are sure to arrive on time!\n", 
-                 "\nYou also see a standard looking bus with darkened windows - you recall the group going together by bus. Maybe this is the best choice? But what if the bus goes to Kardjali... and you are stuck on it?\n", 
-                 "\nYou notice a second bus as well - but this one looks more secure. Could it be the bulletproof one the Chairman requested? There are also more policemen sorrounding this bus.\n", 
-                 "\nYou also notice an empty white Mercedes with the plate number …-777U. You remember seeing the same vehicle across all events today. Maybe the group left, but they recognized you were left behind, and this car is here to quickly take you to the location?\n"]
+Area1.choices = ["\n 🚶You decide to walk to the stadium and figure out from there. Should not take more than 10 minutes, so you are sure to arrive on time!\n", 
+                 "\n 🚌You also see a standard looking bus with darkened windows - you recall the group going together by bus. Maybe this is the best choice? But what if the bus goes to Kardjali... and you are stuck on it?\n", 
+                 "\n 🚛You notice a second bus as well - but this one looks more secure. Could it be the bulletproof one the Chairman requested? There are also more policemen sorrounding this bus.\n", 
+                 "\n 🚗You also notice an empty white Mercedes with the plate number …-777U. You remember seeing the same vehicle across all events today. Maybe the group left, but they recognized you were left behind, and this car is here to quickly take you to the location?\n"]
 Area1.outros = ["\nYou start walking towards the stadium with an increased speed. You are certain that you are ahead than the rest of the group, so you start to feel calmer, before you are stopped by a group of protesters.\n", 
                 "\nAs you get closer and closer, you start hearing familiar voices - Bencsik, Wolf, Becsei, DSK colleagues… After a long sight, you take your place next to DSK Board members. \n", 
                 "\nYou notice the door of the first bus closing as you walk by - maybe you also heard some familiar voices? No other choice left: you confidently enter the bus from the front.\n", 
